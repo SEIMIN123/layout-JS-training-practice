@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+
+      .width-vw-1 {width: 1vw;}
+      .width-vw-2 {width: 2vw;}
+      .width-vw-3 {width: 3vw;}
+      .width-vw-4 {width: 4vw;}
+      .width-vw-5 {width: 5vw;}
+
+
+
+/* class setting */
+    .flex-center-center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .border-test-1 {
+      border: 1px solid red;
+
+    }
+
+    .width-inherit {
+      width: inherit;
+    }
+
+    .root {
+      width: 100vw;
+      height: 100vh;
+      border: 1px solid red;
+    }
+/* 직계자식에게 모두 일괄 적용시킨것 */
+    .root>div {
+      width: 100vw;
+      height: 33vh;
+      border: 1px solid blue;
+    }
+/* 중간부분 */
+    .root>div:nth-child(2) {
+      background-color: #ccc;
+                      
+    }
+
+/* 중간부분에 두개의 자식 */
+
+.root>div:nth-child(2)>div {
+      width: 50vw;
+      height: inherit;
+      border: 1px solid green;
+
+    }
+
+    /* 중간부분에 두개자식에 첫번째 */
+
+    .root>div:nth-child(2)>div:nth-child(2)>div:nth-child(1) {
+
+      width: inherit;
+      height: 50%;
+      background-color: red;
+
+
+
+    }
+/* 알맹이들 전체 */
+    .root>div:nth-child(2)>div:nth-child(2)>div:nth-child(1)>div {
+
+      width: 50%;
+      height: inherit;
+      border: 1px solid black;
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="root border-test-1">
+    <div id="header"></div>
+    <!-- 끝 -->
+    <div id="main" class="flex-center-center"> 
+      <div>
+
+        </div>
+        <div clalss="flex-center-center">
+          
+          
+          <div>알맹이1</div>
+          <div>알맹이2</div>
+
+
+        </div>
+      </div>
+
+    <div id="footer"></div>
+  </div>
+</body>
+</html>
