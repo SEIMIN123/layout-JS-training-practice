@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+<style>
+
+.position-absolute {position: absolute ;}
+
+
+  *{margin: 0; padding: 0;}
+
+  :root {
+
+--color-1:rgb(184, 179, 179);
+--color-2:rgb(226, 212, 212);
+--color-3:rgb(125, 126, 128);
+--color-4:rgb(255, 255, 255);
+--color-5:rgb(170, 49, 49);
+
+  }
+
+
+
+  .conteiner{
+    width: 100vw;
+    height: 100vh;
+    flex-direction: row;
+    display: flex;
+    background-color:var(--color-1)
+
+  }
+
+  .conteiner > div {
+
+    width: 50vw;
+    height: 100vh;
+  }
+
+  .box1 {
+
+    width: 300px;
+    height: 300px;
+
+    margin-top: 15vh;
+    margin-left: 15vw; 
+    margin-bottom: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    z-index: 1;
+    background-color: var(--color-2);
+
+    border-top-left-radius: 1000px;
+    border-top-right-radius: 1000px;
+    border-bottom-left-radius: 1000px;
+    border-bottom-right-radius: 1000px;
+}
+
+  .box2 {
+
+    width: 300px;
+    height: 300px;
+
+    margin-top: 20vh;
+    margin-left: 18vw; 
+    margin-bottom: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    z-index: 0;
+
+    background-color: var(--color-3);
+    
+    border-top-left-radius: 1000px;
+    border-top-right-radius: 1000px;
+    border-bottom-left-radius: 1000px;
+    border-bottom-right-radius: 1000px;
+}
+
+  .box2 > div  {
+
+    width: 100px;
+    height: 100px;
+    background-color: var(--color-4);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+
+}
+
+/* .button1 {
+
+  width: 100px;
+  height: 20px;
+  background-color: var(--color-5);
+
+}
+
+.button2 {
+
+width: 100px;
+height: 20px;
+background-color: var(--color-5);
+
+}.button3 {
+
+width: 100px;
+height: 20px;
+background-color: var(--color-5);
+
+} */
+
+
+
+h1 {
+
+  margin-top: 20vh;
+}
+
+p {
+
+  margin-top: 5vh;
+}
+
+
+
+</style>
+
+
+
+
+</head>
+<body>
+  <div class="conteiner">
+    <div>
+      <div class="box1 position-absolute">ract 1</div>
+
+      <div class="box2 position-absolute"></div>
+      </div>
+    
+    <!-- <div>Main title 
+      <br>
+      <br> 
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est distinctio atque aperiam quisquam amet maiores nesciunt in aliquam, autem, dicta deserunt unde, aliquid sequi quidem! Accusamus dolorum itaque cupiditate quasi.
+      <br>
+      <br>
+      <br>
+      <div class="button1">hash</div>
+      <div class="button2">hash</div>
+      <div class="button3">hash</div>
+    
+    </div>
+     -->
+
+
+     <div>
+       <h1>maintitle</h1>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quis in velit, amet error excepturi blanditiis ullam, officia accusamus assumenda quae, ad tempore facilis deserunt illum mollitia at eos voluptas! </p>
+    
+       </div>
+     </div>
+
+
+</div>
+</body>
+</html>
