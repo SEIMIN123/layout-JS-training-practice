@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+
+    :root {
+      --color-1:#DCB5FF;
+      --color-2:#B6A5E8;
+      --color-3:#C2C3FF;
+      --color-4:#A5B8E8;
+      --color-5:#B5DDFF;
+    }
+
+    body > div {
+
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      border: 1px solid var(--color-3);
+      margin: 10px;
+
+
+    }
+
+    body > div:nth-child(1) {top: 10px; left: 10px; background-color:var(--color-1);
+    
+    border: 1px solid black;
+    z-index:1;
+
+    }
+    body > div:nth-child(2) {top: 20px; left: 20px; background-color:var(--color-2);}
+    body > div:nth-child(3) {top: 30px; left: 30px; background-color:var(--color-3);}
+    body > div:nth-child(4) {top: 40px; left: 40px; background-color:var(--color-4);}
+    body > div:nth-child(5) {top: 50px; left: 50px; background-color:var(--color-5);}
+
+
+
+
+</style>
+
+
+</head>
+
+
+<body>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</body>
+</html>

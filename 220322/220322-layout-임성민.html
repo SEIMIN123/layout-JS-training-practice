@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+    
+  <style>
+
+.position-absolute {position: absolute;}
+
+
+
+  .root {
+
+    width: 100vw;
+    height: 100vh;
+    background-color: #c2c3ff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  /* 박스 div 를 여러개로 이렇게 만들어놓는게 맞는가 모르겠습니다 */
+  .root > div {
+
+    width: 400px;
+    height: 200px;
+    margin: 20px;
+    padding: 30px;
+    border: 1px solid black;
+    background-color: rgb(255, 255, 255);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+
+/* z-index 한게 정확히 반으로 안나옵니다.
+8개 박스 뒤로 사이즈 맞춰서 어떻게 넘기는지 모르겠습니다. */
+
+  .root > div >nav {
+
+    width: 200px;
+    height: 800px;
+    background-color: aliceblue;
+    z-index: 1;
+
+
+  }
+
+  .root > div >main {
+
+    width: 400px;
+    height: 800px;
+    background-color: rgb(59, 114, 161);
+    z-index: 0;
+
+    
+  }
+
+
+
+  </style>
+  
+</head>
+<body>
+  
+  <div class="root">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div> 
+  
+  <div>
+
+    <nav class="position: absolute" ></nav> 
+    <main class="position: absolute" ></main> 
+
+
+      </div>
+    </div>
+
+
+</body>
+</html>
