@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>22/03/13 연습</title>
+  <!-- https://codepen.io/chris__sev/pen/LYOyjY 연습을 토대로 하고 있습니다 -->
+  <style>
+  * { box-sizing:border-box; }
+
+    body 				 { background:url(https://scotch.io/wp-content/uploads/2014/07/61.jpg); }
+    .container 		{ 
+      font-family:'Roboto';
+      width:600px; 
+      margin:30px auto 0; 
+      display:block; 
+      background-color:#c2c3ff;
+      padding:10px 50px 50px;
+    }
+    h2 		 { 
+      text-align:center; 
+      margin-bottom:50px; 
+    }
+    h2 small { 
+      font-weight:normal; 
+      color:#888; 
+      display:block; 
+    }
+    .footer 	{ text-align:center; }
+    .footer a  { color:#53B2C8; }
+    
+ 
+
+    .group 			  { 
+      position:relative; 
+      margin-bottom:45px; 
+  
+    }
+    input 				{
+      font-size:18px;
+      padding:10px 10px 10px 5px;
+      display:block;
+      width:300px;
+      border:none;
+      border-bottom:1px solid #757575;
+    }
+    input:focus 		{ outline:none; }
+    
+
+    label 				 {
+      color:#999; 
+      font-size:18px;
+      font-weight:normal;
+      position:absolute;
+      pointer-events:none;
+      left:5px;
+      top:10px;
+      transition:0.2s ease all; 
+      -moz-transition:0.2s ease all; 
+      -webkit-transition:0.2s ease all;
+    }
+    
+
+    input:focus ~ label, input:valid ~ label 		{
+      top:-20px;
+      font-size:14px;
+      color:#5264AE;
+    }
+
+    .bar 	{ position:relative; display:block; width:300px; }
+    .bar:before, .bar:after 	{
+      content:'';
+      height:2px; 
+      width:0;
+      bottom:1px; 
+      position:absolute;
+      background:#5264AE; 
+      transition:0.2s ease all; 
+      -moz-transition:0.2s ease all; 
+      -webkit-transition:0.2s ease all;
+    }
+    .bar:before {
+      left:50%;
+    }
+    .bar:after {
+      right:50%; 
+    }
+    
+
+    input:focus ~ .bar:before, input:focus ~ .bar:after {
+      width:50%;
+    }
+    
+
+    .highlight {
+      position:absolute;
+      height:60%; 
+      width:100px; 
+      top:25%; 
+      left:0;
+      pointer-events:none;
+      opacity:0.5;
+    }
+    
+
+    input:focus ~ .highlight {
+      -webkit-animation:inputHighlighter 0.3s ease;
+      -moz-animation:inputHighlighter 0.3s ease;
+      animation:inputHighlighter 0.3s ease;
+    }
+    
+    @-webkit-keyframes inputHighlighter {
+      from { background:#5264AE; }
+      to 	{ width:0; background:transparent; }
+    }
+    @-moz-keyframes inputHighlighter {
+      from { background:#5264AE; }
+      to 	{ width:0; background:transparent; }
+    }
+    @keyframes inputHighlighter {
+      from { background:#5264AE; }
+      to 	{ width:0; background:transparent; }
+    }
+  </style>
+
+
+</head>
+<body>
+  <div class="conteiner">
+    <h2>J WORLD SEARCH 
+    <small>JAPAN PLATFORM</small>
+    <!-- small로 하면 1,2,3px처럼 크기를 자유롭게는 못하고 그냥 정해진 글자크기 대로 되는지가 궁금합니다. -->
+    </h2>
+
+    <form>
+      <!-- form이라는걸 좀 더 편하게 쓸 수 있는 방법은 없는지 궁금합니다 -->
+
+      <div class="group">
+        <input type="text" required>
+        <span class="highlight"></span>
+        <span class="bar"></span>
+        <label>이메일로 로그인</label>
+      </div>
+
+      <div class="group">
+        <input type="text" required>
+        <span class="highlight"></span>
+        <span class="bar"></span>
+        <label>비밀번호</label>
+      </div>
+
+    </form>
+
+      <p class="footer">
+        a
+        <!-- 그냥 a 쓰는게 어떤걸로 들어가는지를 모르겠습니다.
+            무슨 코드인건지 꺾쇠 안쓰고 그냥 쓰는 무언간지..어렵습니다. -->
+        <a href="https://drive.google.com/drive/folders/1nlpkV8uk4edPAmsTTffGfR0jiT-2pcSY" target="_blank">tutorial</a>
+        by <a href="https://github.com/kongukjae/web-C-lecture" target="_blank">J WORLD </a>
+      </p>
+  </div> 
+  
+</body>
+</html>
