@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    
+    body { 
+
+      margin: 0; 
+      padding 0;
+      background-color: #333;
+
+    }
+
+    .root {
+      width: 500px;
+      height: 500px;
+      background-color: #fff;  
+
+      position: relative;
+      top:50px;
+      left: 50px;
+      z-index: 1;
+
+
+
+    }
+
+    .root > div {
+      width: 200px;
+      height: 200px;
+      background-color: #c2c3ff;
+
+      position: absolute;
+      top:20px;
+      left: 20px;
+      z-index: 3;
+    }
+    .root div:nth-child(1) {
+      width: 200;
+      height: 200px;
+      background-color:rgb(216, 10, 10);
+
+      position: absolute;
+      top:30px;
+      left: 30px;
+      z-index: 3;
+
+ }
+
+  .root div:nth-child(2) {
+
+    width: 200;
+      height: 200px;
+      background-color:rgb(102, 81, 221);
+
+      position: absolute;
+      top:40px;
+      left: 40px;
+      z-index: 2;
+
+  }
+
+  .root div:nth-child(3) {
+
+  width: 20px;
+  height: 20px;
+  background-color:rgb(16, 253, 56);
+
+  position: absolute;
+  top:90px;
+  left: 300px;
+  z-index: 1;
+
+  filter: blur(10px);
+  }
+
+
+
+  </style>
+</head>
+<body>
+  <div class="root">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+
+  </div>
+
+  
+</body>
+</html>
