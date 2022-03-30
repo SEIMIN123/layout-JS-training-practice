@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+    <style>
+
+    *{margin: 0; padding: 0;}
+    
+    #con {
+
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
+      
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      
+      flex-direction: column;
+      
+    }
+    
+    header  {
+      
+      width: 100vw;
+      height: 20vh;
+      border: 1px solid black;
+      transition: 0.5s;
+      
+      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+      flex-direction: row;
+      
+    }
+    
+    header > div:nth-child(1) {
+      
+      width: 100vw;
+      height: 20vh;
+      background-color: #ccc;
+      border: 1px solid black;
+      
+      
+    }
+    
+    main {
+      
+      width: 100vw;
+      height: 80vh;
+      background-color: #ccc;
+      border: 1px solid black;
+      
+      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+      flex-wrap:wrap;
+    }
+    
+    section {
+      
+      width: 20vw;
+      height: 20vh;
+      border: 1px solid black;
+      
+      margin: 1vw;
+      
+    }
+    
+    footer { 
+      
+      width: 100vw;
+      height: 15vh;
+      background-color: #ccc;
+      border: 1px solid black;
+      transition: 0.5s;
+      
+      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+    }
+    
+    footer > div {
+      
+      width: 50vw;
+      height: 10vh;
+      border: 1px solid black;
+      
+      margin: 1vw;
+      
+    }
+        /* mobile */
+    @media (min-device-width :320px) (max-device-width :480px) {
+
+      *{margin: 0; padding: 0;}
+      #con {
+
+        width: 100vw;
+        height: 100vh;
+        background-color: #ccc;
+        
+        display: flex;
+        justify-content: center;
+        align-items:center;
+
+        flex-direction: column;
+
+        }
+
+        header {
+        width: 100vw;
+        height: 100vh;
+        background-color: #ccc;
+
+        display: flex;
+        justify-content: center;
+        align-items:center;
+
+        }
+
+        main {            
+        width: 100vw;
+        height: 100vh;
+        background-color: #ccc;
+
+        display: flex;
+        justify-content: center;
+        align-items:center;
+  
+        }
+
+        footer{
+        width: 100vw;
+        height: 100vh;
+        background-color: #ccc;
+
+        display: flex;
+        justify-content: center;
+        align-items:center;
+
+          }
+        }
+
+    /* desktop */
+    @media (min-width:1920px) {
+          
+          *{margin: 0; padding: 0;}
+
+          #con {
+
+            width: 100vw;
+            height: 100vh;
+            background-color: #ccc;
+
+            display: flex;
+            justify-content: center;
+            align-items:center;
+
+            flex-direction: column;
+          }
+
+          header {
+            width: 100vw;
+            height: 100vh;
+            background-color: #ccc;
+
+            display: flex;
+            justify-content: center;
+            align-items:center;
+
+
+          }
+    
+          main {            
+            width: 100vw;
+            height: 100vh;
+            background-color: #ccc;
+
+            display: flex;
+            justify-content: center;
+            align-items:center;
+
+          }
+    
+          footer{
+            width: 100vw;
+            height: 100vh;
+            background-color: #ccc;
+
+            display: flex;
+            justify-content: center;
+            align-items:center;
+
+          }
+        }  
+    
+    </style>
+
+<body>
+  <div id="con">
+    <header>
+      <div></div>
+    </header>    
+    
+    <main>
+      <section></section>
+      <section></section>
+      <section></section>
+      <section></section>
+      <section></section>
+      <section></section>
+      <section></section>
+      <section></section>
+    </main>
+    
+    <footer>
+      <div></div>
+      <div></div>
+    </footer>
+  </div>
+
+
+
+</body>
+</html>
