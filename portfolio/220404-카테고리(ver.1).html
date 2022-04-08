@@ -16,19 +16,33 @@
       height: 100vh;
       
       display: flex;
-      justify-content: flex-end;
+      justify-content: flex-start;
       align-items: center;
       
       flex-direction: row;
       
     }
 
+
     #con > div:nth-child(1) {
 
       width: 20vw;
-      height: 144vh;
+      height: 100vh;
       background-color: rgb(86, 88, 88);
 
+      position: fixed;
+
+    }
+
+    #con > div:nth-child(1) > ul > li {
+
+      color: white; 
+      
+      list-style: none;
+      line-height: 8vw;
+      text-align: center;
+      font-weight: bolder;
+      font-size: 20px;
     }
 
 
@@ -109,8 +123,15 @@
 
 <body>
   <div id="con">
-
-    <div></div>
+    <div>
+      <ul>
+        <li>홈</li>
+        <li>검색</li>
+        <li>다본작품</li>
+        <li>다운로드</li>
+        <li>랜덤</li>
+      </ul>
+    </div>
 
     <div class="box">
       <header></header>    

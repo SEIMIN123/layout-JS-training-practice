@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+
+    *{margin: 0; padding: 0;}
+
+  #root { 
+
+  width: 100vw;
+  height: 100vh;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  border: 1px solid black;
+
+  }
+
+  #root > div {
+
+    width: 90vw;
+    height: 90vh;
+    border: 1px solid black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    flex-direction: column;
+  }
+
+  #root > div:nth-child(2) > div {
+
+    width: 45vw;
+    height: 40vh;
+    border: 1px solid black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    flex-direction: row;
+
+  }
+
+  #root > div:nth-child(2) > div:nth-child(2) > div {
+
+    width: 20vw;
+    height: 35vh;
+    border: 1px solid black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    flex-direction: row;
+
+
+    }
+
+  #root > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div {
+
+    width: 9vw;
+    height: 20vh;
+    border: 1px solid black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    }
+
+#root > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div {
+
+    width: 5vw;
+    height: 10vh;
+    border: 1px solid black;
+
+    background-color: red;
+
+    }
+
+
+  </style>
+</head>
+<body>
+  <div id="root">
+      <div></div>
+      <div>
+        <div></div>
+        <div>
+          <div>
+            <div>
+              <div></div>
+            </div>
+            <div></div>
+          </div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+
+  </div>  
+</body>
+</html>

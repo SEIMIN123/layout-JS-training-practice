@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+
+    *{margin: 0; padding: 0;}
+    
+
+
+
+    #back {
+      width: 100vw;
+      height: 100vh;
+
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      flex-direction: row;
+
+    }
+
+    /* 사이드 바 */
+
+    #back > div:nth-child(1) {
+
+      width: 15vw;
+      height: 100vh;
+      background-color: rgb(105, 100, 100);
+
+      position: fixed;
+
+    }
+
+    #back > div > ul >li {
+
+      color: white; 
+      
+      list-style: none;
+      line-height: 8vw;
+      text-align: center;
+      font-weight: bolder;
+      font-size: 20px;
+    }
+
+    #back > div > ul >li:hover {
+
+      color: rgb(173, 170, 170);
+      cursor: pointer;
+      transition: 0.4s;
+    }     
+
+
+
+    /* 가운데 메뉴 위 */
+
+    #back > div > div:nth-child(1) {
+      width: 85vw;
+      height: 100vh;
+      background-color: #2A3641;
+
+      margin-left: 280px;
+
+    }
+
+
+    /*  가운데 반 나눈거 */
+
+    #back > div > div:nth-child(1) > div {
+
+      width: 85vw;
+      background-color: #2A3641;
+
+      font-weight: 600;
+      font-size: 30px;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      flex-direction: row;
+      flex-wrap: wrap;
+
+    }
+
+      /* 서치바  */
+
+      
+      #back > div > div:nth-child(1) > div:nth-child(1) > input {
+        
+        width: 30vw;
+        height: 40px;
+        background-color: rgb(204, 201, 201);
+        
+        margin-left: 35px;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        
+        }
+            
+    /* 가운데 메뉴 위 레이아웃 (8) */
+
+    #back > div > div:nth-child(1) > div:nth-child(2) > div {
+
+      width: 20vw;
+      height: 25vh;
+      background-color: rgb(229, 231, 233);
+      margin: 5px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      border-top-left-radius: 50px;
+      border-top-right-radius: 50px;
+      border-bottom-left-radius: 50px;
+      border-bottom-right-radius: 50px;
+
+      /* 강사 comment */
+      /* border-radius:50px; */
+
+
+    }
+
+    #back > div > div:nth-child(1) > div:nth-child(2) {
+
+      justify-content: center;
+    }
+
+
+      /*  가운데 메뉴 밑 */
+
+    #back > div >div:nth-child(1) > div:nth-child(3) {
+
+      width: 85vw;
+      height: 100vh;
+
+      font-weight: 600;
+      font-size: 30px;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      flex-direction: row;
+      flex-wrap: wrap;
+
+    }
+
+    /* 가운데 메뉴 밑 레이아웃 (10) */
+
+    #back > div >div:nth-child(1) > div:nth-child(3) > div {
+
+      width: 15vw;
+      height: 20vh;
+      background-color: rgb(231, 229, 229);
+      margin-left: 20px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      border-top-left-radius: 50px;
+      border-top-right-radius: 50px;
+      border-bottom-left-radius: 50px;
+      border-bottom-right-radius: 50px;
+
+    }
+
+      input {
+
+      font-size: 25px;
+      border-radius: 15px;
+      border: 0;
+      border: solid rgb(235, 228, 228);
+      padding-left: 20px;
+      outline: rgb(255, 254, 254); 
+
+      margin: 10px;
+      }
+
+  </style>
+
+</head>
+<body>
+  <div id="back">
+    <div>
+      <ul>
+        <li>홈</li>
+        <li>검색</li>
+        <li>다본작품</li>
+        <li>다운로드</li>
+        <li>랜덤</li>
+      </ul>
+    </div>
+      <div>
+          <div>
+            <div>
+              <input type="text"></input>
+            </div>
+                <div>
+                  <div>드라마</div>
+                  <div>TV 애니메이션</div>
+                  <div>어른이 애니메이션</div>
+                  <div>예능</div>
+                  <div>영화</div>
+                  <div>새로나온신작</div>
+                  <div>그때 그시절 일드</div>
+                  <div>그때 그시절 애니</div>
+                </div>
+            
+                <div>
+                  <div>가수</div>
+                  <div>앨범</div>
+                  <div>성우</div>
+                  <div>성우 라디오</div>
+                  <div>음악</div>
+                  <div>스포츠</div>
+                  <div>액션</div>
+                  <div>90's</div>
+                  <div>80's</div>
+                  <div>SF</div>
+                  <div>스릴러</div>
+                  <div>어드벤처</div>
+                  <div>레트로</div>
+                  <div>판타지</div>
+                  <div>로맨스</div>
+                </div>
+
+          </div>
+      </div>
+
+
+  </div>
+</body>
+</html>
