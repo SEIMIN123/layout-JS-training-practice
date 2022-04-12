@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    *{margin: 0; padding: 0;}
+
+    .back {
+
+      width: 100vw;
+      height: 200vh;
+      border: 1px solid black;
+  
+    }
+
+    .back > div:nth-child(1) {
+
+      width: 100vw;
+      height: 100vh;
+      border: 1px solid black;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+/* ------------------------------------------------------ */
+    
+    .circle {
+
+      width: 100vw;
+      height: 100vh;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      position: relative;
+
+    }
+
+    .circle > div:nth-child(1) {
+
+      flex-grow: 1;
+    }
+
+    .circle > div:nth-child(1) > div:nth-child(1) {
+
+      width: 500px;
+      height: 500px;
+      border: 1px solid black;
+
+      border-top-left-radius: 1000px;
+      border-bottom-left-radius: 1000px;
+      border-top-right-radius: 1000px;
+      border-bottom-right-radius: 1000px;
+
+    }
+
+    .circle > div:nth-child(2) > div:nth-child(1) {
+
+      width: 500px;
+      height: 500px;
+      border: 1px solid black;
+
+      margin-bottom: 40vh;
+      margin-right: 70px;
+
+      border-radius: 50%;
+
+    }
+
+/*--------------------------------------------------------*/
+
+</style>
+</head>
+<body>
+  <div class="back">
+    <div>
+<!--------------------------------------------------------->
+        <div class="circle">
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+        </div>
+<!--------------------------------------------------------->
+
+      
+      
+      
+      
+      
+      
+      
+      </div>
+  </div>
+</body>
+</html>
