@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@-webkit-keyframes moving {
+  0% {
+    width: 0px;
+  }
+  50% {
+    width: 400px;
+    opacity: 0.7;
+  }
+  100% {
+    width: 0px;
+  }
+}
+
+@keyframes moving {
+  0% {
+    width: 0px;
+  }
+  50% {
+    width: 400px;
+    opacity: 0.7;
+  }
+  100% {
+    width: 0px;
+  }
+}
+
+#root {
+  width: 100vw;
+  height: 150vh;
+  border: 1px solid #723d3d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#root > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#root > div > div {
+  width: 400px;
+  height: 400px;
+  opacity: 0.2;
+  z-index: 1;
+  -webkit-animation: 8s moving infinite;
+          animation: 8s moving infinite;
+  mix-blend-mode: difference;
+  position: relative;
+}
+
+.box1 {
+  margin: 10px;
+  padding: 30px;
+  background-color: aqua;
+  left: 15vw;
+  top: 5vh;
+}
+
+.box2 {
+  margin: 10px;
+  padding: 30px;
+  background-color: #6e19cf;
+  bottom: 10vh;
+}
+
+.box3 {
+  margin: 10px;
+  padding: 30px;
+  background-color: #7df030;
+  right: 5vw;
+}
+
+.box4 {
+  margin: 10px;
+  padding: 30px;
+  background-color: #d66b2d;
+  right: 40vw;
+  top: 15vh;
+}

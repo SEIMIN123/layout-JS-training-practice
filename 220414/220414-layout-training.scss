@@ -1,0 +1,87 @@
+*{margin: 0; padding: 0;}
+
+@mixin flex {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+@mixin border {
+  
+  border: 1px solid black;
+}
+
+@keyframes moving {
+
+0% {width: 0px;}
+50% {width: 400px; opacity: 0.7;}
+100% {width: 0px;}
+}
+//------------------------------------// 
+
+#root {
+  width: 100vw;
+  height: 150vh;
+  border: 1px solid rgb(114, 61, 61);
+
+  @include flex;
+}
+
+#root > div {
+  
+  @include flex;
+}
+
+#root > div > div {
+
+  width: 400px;
+  height: 400px;
+  opacity:0.2;
+  z-index: 1;
+  animation: 8s moving infinite;
+  mix-blend-mode:difference;
+
+  position: relative;
+
+}
+
+.box1 {
+
+  margin: 10px;
+  padding: 30px;
+  background-color: aqua;
+  left: 15vw;
+  top: 5vh;
+}
+
+.box2 {
+
+  margin: 10px;
+  padding: 30px;
+  background-color: rgb(110, 25, 207);
+
+  bottom: 10vh;
+}
+
+.box3 {
+
+  margin: 10px;
+  padding: 30px;
+  background-color: rgb(125, 240, 48);
+
+  right: 5vw;
+
+}
+
+.box4 {
+
+  margin: 10px;
+  padding: 30px;
+  background-color: rgb(214, 107, 45);
+
+  right: 40vw;
+  top: 15vh;
+
+}
