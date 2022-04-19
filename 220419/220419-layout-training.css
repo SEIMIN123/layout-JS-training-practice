@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#root > div > div {
+  width: 40vw;
+  height: 21vh;
+  background-color: #272323;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#root .box {
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+  background-color: salmon;
+}
+
+#root .box1 {
+  width: 230px;
+  height: 230px;
+  border-radius: 120px;
+  position: relative;
+  margin-left: -50px;
+  margin-top: 100px;
+  border: 5px solid yellow;
+}
+
+#root .box2 {
+  width: 50vw;
+  height: 25vh;
+}
+
+#root .box2 > div {
+  width: 10px;
+  height: 10px;
+  border-radius: 30px;
+  margin: 10px;
+  background-color: #e4d3d3;
+}
+
+#root .box3 > div {
+  width: 350px;
+  height: 250px;
+  margin-bottom: 350px;
+  border-radius: 50px;
+  background-color: rgba(200, 200, 200, 0.2);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 40px;
+  border-radius: 50px;
+  text-align: start;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#root .box4 > div {
+  width: 350px;
+  height: 250px;
+  margin-bottom: 220px;
+  border-radius: 50px;
+  background-color: rgba(200, 200, 200, 0.2);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 40px;
+  border-radius: 50px;
+  text-align: start;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#root p {
+  margin: 30px;
+}

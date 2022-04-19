@@ -1,0 +1,114 @@
+*{margin: 0; padding: 0;}
+@mixin flex ($d, $j, $a){
+
+  display: ($d);
+  justify-content: ($j);
+  align-items: ($a);
+
+}
+
+@mixin border {
+  
+  border: 1px solid black;
+  
+}  
+
+// --------------------------------------
+
+#root {
+
+  width: 100vw;
+  height: 100vh;
+  @include flex(flex, center, center);
+  
+& > div > div {
+
+  width: 40vw;
+  height: 21vh;
+  background-color: rgb(39, 35, 35);
+  @include flex(flex, center, center);
+
+}
+
+// --------------------------------------
+
+.box {
+
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+  background-color: salmon;
+
+}
+
+.box1 {
+
+  width: 230px;
+  height: 230px;
+  border-radius: 120px;
+  position: relative;
+  margin-left: -50px;
+  margin-top: 100px;
+  border: 5px solid yellow;
+
+}
+
+// --------------------------------------
+.box2 {
+
+  width: 50vw;
+  height: 25vh;
+
+}
+
+.box2 > div{
+
+  width: 10px;
+  height: 10px;
+  border-radius: 30px;
+  margin: 10px;
+  background-color: rgb(228, 211, 211);
+
+}
+
+// --------------------------------------
+
+.box3 > div {
+
+  width: 350px;
+  height: 250px;
+  margin-bottom: 350px;
+  border-radius: 50px;
+  background-color: rgba(200,200,200,0.2);
+  backdrop-filter: blur(10px);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 40px;
+  border-radius: 50px;
+  text-align:start;
+  color: white;
+  @include flex(flex, flex-start, center);
+}
+
+.box4 > div {
+
+  width: 350px;
+  height: 250px;
+  margin-bottom: 220px;
+  border-radius: 50px;
+  background-color: rgba(200,200,200,0.2);
+  backdrop-filter: blur(10px);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 40px;
+  border-radius: 50px;
+  text-align:start;
+  color: white;
+
+  @include flex(flex, flex-start, center);
+}
+
+p {
+
+  margin: 30px;
+}
+
+}
