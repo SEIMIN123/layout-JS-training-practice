@@ -1,0 +1,46 @@
+*{margin: 0; padding: 0;}
+
+@mixin flex($d, $j, $a) {
+  display: ($d);
+  justify-content: ($j);
+  align-items: ($a);
+}  
+
+@mixin border {
+
+  border: 1px solid black;
+}
+
+#root {
+
+  width: 100vw;
+  height: 100vh;
+
+  @include border;
+  @include flex(flex, center, center);
+
+& > ul {
+
+  width: 85vw;
+  height: 15vh;
+  color: #797575;
+  font-size: 1rem;
+  font-family: 'Kite One', sans-serif;
+  font-weight: 600;
+  white-space: nowrap;
+
+}
+
+& > ul > h2 {
+
+  color: #000;
+}
+
+
+
+
+
+
+
+}
+
