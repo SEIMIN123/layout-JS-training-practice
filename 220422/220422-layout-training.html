@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <div id="root">
+    <div id="one">div</div>
+  </div>
+</head>
+<body>
+  <script>
+
+    var root = document.getElementById("root")
+
+    root.style.width = "100vw";
+    root.style.height = "100vh";
+    root.style.display = "flex";
+    root.style.justifyContent = "center";
+    root.style.alignItems = "center";
+
+    console.dir(root);
+
+    var one = document.getElementById("one")
+    root.style.width = "500px";
+    root.style.height = "500px";
+    root.style.borderRadius = "300px";
+    root.style.backgroundColor = "#c2c3ff";
+    root.style.fontSize = "100px";
+    root.style.display = "flex";
+    root.style.justifyContent = "center";
+    root.style.alignItems = "center";
+
+  //   console.dir(root);
+  // </script>
+</body>
+</html>
