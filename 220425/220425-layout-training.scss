@@ -1,0 +1,46 @@
+*{margin: 0; padding: 0;}
+
+#root {
+  width:100vw;
+  height:100vh;
+  
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+
+& > div {
+  width: 800px;
+  height: 800px;
+
+  display:flex;
+  justify-content:flex-start;
+  align-items:center;
+  flex-wrap: wrap;
+}
+
+& > div > div {
+  width:250px;
+  height:250px;
+  margin:10px;
+  background-color: #ccc;
+}
+
+& > div > .box1 {
+  
+  width: 500px;
+}
+
+& > div > .box2 {
+  
+  height: 500px;
+}
+
+
+
+
+
+
+}
+
+
