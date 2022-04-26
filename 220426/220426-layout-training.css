@@ -32,6 +32,14 @@
 }
 
 #root .ele {
+  width: 30vw;
+  height: 78vh;
+  -webkit-transition: 2s;
+  transition: 2s;
+  background-color: #7b88e8;
+}
+
+#root .ele1 {
   width: 300px;
   height: 300px;
   margin: 10px;
@@ -80,4 +88,3 @@
       -ms-flex-direction: column;
           flex-direction: column;
 }
-/*# sourceMappingURL=220426-layout-training.css.map */

@@ -11,7 +11,7 @@
   
   <div id="root">
     <div>
-      <div class="ele"></div>
+      <div class="ele ele1" ></div>
       <div class="box">
         <div></div>
         <div></div>
@@ -41,12 +41,15 @@
 
     one.addEventListener('click', function(){
       
-      one.classList.toggle('ele');
+      // 클래스에 하나 더 집어넣어서 제어 CSS에 스타일링해놓고 toggle로 제어 
+      one.classList.toggle('ele1');
 
-      one.style.width = "700px";
-      one.style.height = "750px";
-      one.style.transition = "2s";
-      one.style.backgroundColor = "#7b88e8"
+      // one.style.width = "30vw";
+      // one.style.height = "78vh";
+      // one.style.transition = "2s";
+      // one.style.backgroundColor = "#7b88e8"
+
+      // 주석처리한건 수동제어로 하는것
 
       });
 
@@ -71,11 +74,6 @@
     //   one.style.backgroundColor = "#7b88e8"
 
     //   });
-
-
-
-
-
     
   </script>
 </body>
