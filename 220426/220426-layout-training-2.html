@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+
+    #root {
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    button {
+
+      width: 100px;
+      height: 50px;
+      margin: 50px;
+      border-radius: 30px;
+    }
+
+  </style>
+</head>
+<body>
+<div id="root">
+  <button>DAY</button>
+  <button>NIGHT</button>
+</div>
+
+<script>
+  // const test = document.querySelector('#root > button');
+  // // 이렇게 해도 되고. 
+
+  const root = document.getElementById("root");
+  const clickBtn = root.children[0];
+  const clickBtn1 = root.children[1];
+  // 이렇게 해도 된다. (권장)
+
+  console.dir(root);
+  console.log(clickBtn);
+  console.log(clickBtn1);
+
+// -------------------------------------------------------------
+
+  let bgColorValue = 1000;
+  
+  root.style.width = "100vw";
+  root.style.height = "100vh";
+  root.style.backgroundColor = `#${bgColorValue}`;
+  
+  let data = true;
+  let data2 = true;
+
+// -------------------------------------------------------------
+
+  clickBtn.addEventListener('click', function() {
+
+    if(data === true) {
+
+      // console.log('data 값은 :' + data);
+      data = false;
+      root.style.backgroundColor = "salmon";
+      root.style.transition = "2s";
+    } 
+    
+    else { //else의 영역 data !== true, data === false
+      
+      // console.log("지금 else로 data 값은 : " + data);
+      data = true;
+      root.style.backgroundColor = "white";
+      root.style.transition = "2s";
+    }
+
+  });
+
+// -------------------------------------------------------------
+
+    clickBtn1.addEventListener('click', function(){
+      
+      if(data2 === true) {
+
+      data2 = false;
+      root.style.backgroundColor = "darkblue  ";
+      root.style.transition = "2s";
+    }
+
+    else { 
+
+      data2 = true; 
+      root.style.backgroundColor = "black";
+      root.style.transition = "2s";
+    }
+
+    });
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- <script>
+    const arr = ["피카츄","라이츄","꼬부기","파이리"];
+    const test = ["피카츄","라이츄","꼬부기","파이리","버터풀"];
+  
+    console.log(arr[2] === test[2]);
+
+    if(arr[2] === test[2]) {
+      console.log("그래");
+    }else {
+      test[2] = "버터풀";
+      console.log(test);
+    }
+    // 21번 행 if() 영역임.
+    
+    if(arr[2] === test[2]) {
+      arr[2] = "버즈";
+      test[2] = "버즈";
+      console.log(arr);
+      console.log(test);
+
+    } else {
+      console.log("안녕");
+    }
+    
+    
+
+
+
+
+  </script> -->
+
+
+  <!-- <script>
+
+    let a;
+    // 변수만 선언해준 것.
+    console.log(a);
+    // undefined 정의 되지 않았다뜸.
+    a = 1;
+    console.log(a);
+
+
+    const root = document.getElementById("root"); 
+    // consts는 선언과 동시에 값을 대입해줘야 함. rule : 변하지 않을거니까 
+    // 개발자들은 지들끼리 변수선언과 동시에 초기화 했다. 라는 어휘로씀. 
+    // 디자이너 말로는 쉐입만들고 레이어 이름 정해준다.
+    console.log(b);
+
+
+  </script> -->
+
+
+
+  <div id="root"></div>
+
+  <script>
+
+    const a = document.querySelector("#root");
+
+    let value = 100; 
+    // 변수로 지정했다.
+    let colorValue = 333;
+
+    a.style.width = value + "vw";
+    a.style.height = `${value}vh`;
+    a.style.backgroundColor = `#${colorValue}`;
+
+    a.addEventListener("click", function(){
+      
+    let result;
+    console.log("리절트 연산이 시작되기 전 : " + value + ": 이값이다.");
+
+    result = value / 2;
+
+    a.style.width = result + "vw";
+    a.style.height = result + "vh";
+
+    value = result;
+    console.log("리절트 값을 value 변수에 대입시키고 난 후의 value 값" + value);
+
+    });
+
+  </script>
+
+</body>
+</html>
