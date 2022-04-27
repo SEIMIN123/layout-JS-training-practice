@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1 id="one">hello javascript!</h1>
+  <h1 id="two">hello javascript!</h1>
+  
+  <script>
+    const one = document.getElementById('one');
+
+    const two = document.getElementById('two');
+
+    let fontSizeValue = 15;
+    let data = true;
+    let data1 = false;
+    
+    one.addEventListener('click', function(){
+      console.log(fontSizeValue);
+      
+      if(fontSizeValue === true){
+      data = true;
+      fontSizeValue++;
+      one.style.fontSize = fontSizeValue + "px";}
+
+      else {
+      data1 = false;
+      fontSizeValue++;
+      one.style.fontSize = fontSizeValue + "px";
+      }
+
+    });
+
+    // two.addEventListener('click', function(){
+
+
+
+      
+
+
+
+  </script>
+</body>
+</html>

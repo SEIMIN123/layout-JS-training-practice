@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="root">
+    <button id="click">+</button>
+    <button id="click1">-</button>
+    <h1 id="text">hello world!</h1>
+  </div>
+
+  <script>
+
+    const root = document.getElementById("root");
+    console.dir(root);
+
+    root.style.display = "flex";
+    root.style.justifyContent = "center";
+    root.style.alignItems = "center";
+    root.style.flexDirection = "column";
+
+    const click = document.getElementById("click");
+    console.dir(click);
+
+    click.style.width = "100px";
+    click.style.height = "100px";
+    click.style.margin = "10px";
+
+    const click1 = document.getElementById("click1");
+    console.dir(click1);
+
+    click1.style.width = "100px";
+    click1.style.height = "100px";
+
+    const text = document.getElementById("text");
+    console.dir(text);
+
+// -------------------------------------------------------------
+
+    let value = 1;
+    text.style.fontSize = value + "px";
+
+    click.addEventListener('click', function(){
+
+    value += 10;
+    text.style.fontSize = value + "px";
+
+    });
+
+    click1.addEventListener('click', function(){
+
+    value -= 10;
+    text.style.fontSize = value + "px";
+
+    });
+
+  </script>
+</body>
+</html>

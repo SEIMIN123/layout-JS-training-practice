@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="root">
+    <div></div>
+    <button id="click">click</button>
+  </div>
+
+  <script>
+    const root = document.getElementById("root");
+    console.dir(root);
+
+    const gray = root.children[0];
+    console.dir(gray);
+    
+    const click = document.getElementById("click");
+    console.dir(click);
+
+    click.addEventListener("click", function(){
+
+    let value = 1;    
+    for(let i = 0; i < value; i++) {
+      let makeSection = document.createElement("section");
+      makeSection.innerHTML = "hello world" + value;
+
+      root.appendChild(makeSection);  
+    }
+
+  });
+
+
+
+  </script>
+</body>
+</html>

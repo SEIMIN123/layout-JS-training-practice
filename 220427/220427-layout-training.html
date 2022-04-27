@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="220427-layout-training.css">
+</head>
+<body>
+  <div id="root">
+    <div class="box box1">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div class="cir cir1"></div>
+    </div>
+  </div>
+  </body>
+
+  <script>
+
+    const root = document.getElementById("root");
+
+    console.dir(root);
+    console.log(root);
+
+    const one = root.children[0];
+    const two = root.children[0].children[10]; 
+
+    // -------------------
+
+    one.addEventListener('click', function(){
+
+      one.classList.toggle('box1');
+
+    });
+
+    two.addEventListener('click', function(){
+
+    two.classList.toggle('cir1');
+    
+    });
+
+  </script>
+</html>
