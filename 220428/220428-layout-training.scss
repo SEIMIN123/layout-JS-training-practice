@@ -21,6 +21,7 @@
 
       width: 50vw;
       height: 50vh;
+
       @include flex(flex,center,center);
     }
 
@@ -28,35 +29,29 @@
 
       width: 300px;
       height: 300px;
-      margin-right: 400px;
-      background-color: antiquewhite;
-      transition: 2s;  
+      margin-left: -400px;
+      background-color: rgb(65, 157, 236);
+      transition: 1.5s;
       @include flex(flex,center,center);
     }
 
     .box1-1 {
 
-      width: 300px;
-      height: 300px;
-      transform: translateY(-300px);
+      transform:translateY(-300px);
     }
 
     .box2 {
 
       width: 300px;
       height: 300px;
-      background-color: aqua;
-      transition: 2s;  
-      position: absolute;
+      background-color: rgb(174, 149, 241);
+      transition: 1.5s;
+      position:absolute;
       @include flex(flex,center,center);
     }
 
       .box2-1 {
 
-      transform: translateY(-300px);
-      @include flex(flex,center,center);
+        transform:translateY(-300px);
     }
-
-
-
   }
