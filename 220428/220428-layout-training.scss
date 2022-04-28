@@ -1,0 +1,62 @@
+*{margin: 0; padding: 0;}
+
+  @mixin flex ($d, $j, $a){
+
+  display: ($d);
+  justify-content: ($j);
+  align-items: ($a);
+  }
+  
+  @mixin border {
+    border: 1px solid black;
+  }
+
+  #root {
+
+    width: 100vw;
+    height: 100vh;
+    @include flex(flex,center,center);
+
+    & > div {
+
+      width: 50vw;
+      height: 50vh;
+      @include flex(flex,center,center);
+    }
+
+    .box1 {
+
+      width: 300px;
+      height: 300px;
+      margin-right: 400px;
+      background-color: antiquewhite;
+      transition: 2s;  
+      @include flex(flex,center,center);
+    }
+
+    .box1-1 {
+
+      width: 300px;
+      height: 300px;
+      transform: translateY(-300px);
+    }
+
+    .box2 {
+
+      width: 300px;
+      height: 300px;
+      background-color: aqua;
+      transition: 2s;  
+      position: absolute;
+      @include flex(flex,center,center);
+    }
+
+      .box2-1 {
+
+      transform: translateY(-300px);
+      @include flex(flex,center,center);
+    }
+
+
+
+  }
