@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="root"></div>
+
+  <script>
+    const root = document.getElementById("root");
+    // id root의 문서를 만들었음.
+    root.style.fontSize = "5rem";
+    // root의 문서에 나오는 숫자 스타일 만들었음.폰트 사이즈 
+    let isStatus = true;
+    // if문에 사용할 맞다라는 변수를 만들었음.
+    let current = 0;
+    // if문에 카운트 할 숫자의 변수를 만들었음.
+    root.textContent = current;
+    // 텍스트의 글자가 나오게 해줘.
+
+
+    // ---------------------------------------------------------
+
+
+    root.addEventListener('click', function () {
+      // root의 문서에 클릭시 나올 이벤트를 만들었음.
+
+      if (isStatus) {
+        // isStatus를 맞다고 지정함.
+        current++;
+        // 0으로 변수 지정한 current에 숫자를 더해줘.
+        if (current >= 10) {
+          // current가 10까지만 나오게 해줘.
+          isStatus = false;
+          // 10이 되면 막아줘. = 실행결과 false가 없으면 10이상으로 플러스로 나감.
+        }
+        
+        root.textContent = current;
+        // 텍스트의 글자가 나오게 해줘.
+      } else {
+        // 조건이 안맞으면
+        current--;
+        // 0으로 변수 지정한 current에 숫자를 빼줘.
+        if (current <= 0) {
+          // currentr가 0까지만 나오게 해줘.
+          isStatus = true;
+          // 0까지만 나오게 해줘. = 실행결과 true가 없으면 0에서 마이너스로 나감. 
+        }
+
+        root.textContent = current;
+        // 텍스트의 글자가 나오게 해줘.
+      }
+    })
+  </script>
+
+</body>
+
+</html>
