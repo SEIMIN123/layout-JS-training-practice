@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    
+    *{margin: 0; padding: 0;}
+
+    #root {
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    button {
+
+      width: 100px;
+      height: 50px;
+      margin: 50px;
+      border-radius: 30px;
+    }
+
+  </style>
+</head>
+<body>
+  <div id="root">
+    <button>눌러볼라고</button>
+    <button>누르지마</button>
+  </div>
+
+  <script>
+
+    const root = document.getElementById("root");
+
+    console.dir(root);
+    console.log(root);
+
+    const clickBtn = root.children[0];
+    const clickBtn1 = root.children[1];
+
+    // ----------------------------------------
+
+    root.style.width = "100vw"
+    root.style.height = "100vh"
+
+
+    let data = true;
+    let data1 = true;
+
+    //--------------------------------------
+
+    clickBtn.addEventListener('click', function(){
+
+      if(data === true) {
+
+        data = false;
+
+        root.style.backgroundColor = "#c2c3ff";
+        root.style.transition = "1s";
+
+      }
+
+      else {
+
+        data = true;
+
+        root.style.backgroundColor = "#fff";
+        root.style.transition = "1s";
+
+      }
+    });
+
+
+      //--------------------------------------
+
+      clickBtn1.addEventListener('click', function(){
+
+        if(data1 === true) {
+        
+          data1 = false;
+        
+          root.style.backgroundColor = "red";
+          root.style.transition = "1s";
+        
+        }
+
+        else {
+        
+          data1 = true;
+        
+          root.style.backgroundColor = "#fff";
+          root.style.transition = "1s";
+        
+        }
+
+            });
+
+
+  </script>
+</body>
+</html>

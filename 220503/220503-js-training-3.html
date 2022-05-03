@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+
+*{margin: 0; padding: 0;}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#root > div {
+
+  width: 80vw;
+  height: 80vh;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 100px;
+}
+
+button {
+
+  width: 100px;
+  height: 50px;
+  margin: 50px;
+  border-radius: 30px;
+}
+
+  </style>
+</head>
+<body>
+<div id="root">
+
+  <div id="box1">안녕하세요
+  <button>A</button>
+  </div>
+  <div id="box2">안녕히 가세요
+  <button>B</button>
+  </div>  
+</div>
+
+<script>
+
+      const div1 = document.getElementById('box1');
+      console.log(div1);
+
+      const div2 = document.getElementById('box2');
+      console.log(div2);
+
+      const button1 = root.children[0].children[0];
+      const button2 = root.children[1].children[0];
+
+      //-----------------------------------------------
+    
+      let data = true;
+      let data1 = true;
+
+      // ----------------------------------------------
+
+      button1.addEventListener('click', function(){
+    
+    if (data === true){
+
+      data = false;
+
+      div1.style.backgroundColor = "#c2c3ff";
+      div1.style.color = "#fff";
+      div1.style.transition = "0.5s";
+    }
+
+    else { 
+      data = true;
+
+      div1.style.backgroundColor = "#fff";
+      div1.style.color = "#000";
+      div1.style.transition = "0.5s";
+
+    }
+
+  });
+
+      button2.addEventListener('click', function(){
+    
+    if (data1 === true){
+
+      data1 = false;
+
+      div2.style.backgroundColor = "#000";
+      div2.style.color = "#fff";
+      div2.style.transition = "0.5s";
+    }
+
+    else { 
+      data1 = true;
+
+      div2.style.backgroundColor = "#fff";
+      div2.style.color = "#000";
+      div2.style.transition = "0.5s";
+
+    }
+
+  });
+
+</script>
+</body>
+</html>

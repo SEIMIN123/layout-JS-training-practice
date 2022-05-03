@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    #root {
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    #root>div {
+      margin: 2vw;
+      font-size: 2rem;
+    }
+
+    button{
+
+      width: 100px;
+      height: 100px;
+    }
+  </style>
+
+
+</head>
+
+<body>
+  
+  <div id="root">
+    <div>poketmon</div>
+    <button>click</button>
+  </div>
+  
+  <script>
+    
+    
+    const practics = ["피카츄", "라이츄", "파이리", "꼬부기", "버터풀", "야도란", "피죤투", "또가스"];
+    const completeText = "포켓몬을 다모았다.";
+    
+    const root = document.getElementById("root");
+    const div = root.children[0];
+    const button = root.children[1];
+
+    console.log(root);
+    console.log(div);
+    console.log(button);
+
+    let current = 0;
+    let isEnd = false;
+
+    //-----------------------------------
+
+    button.addEventListener('click', function(){
+
+    if(current < practics.length) {
+      
+      const makeDiv = document.createElement("div");
+      
+      makeDiv.textContent = practics[current];
+
+      current++;
+
+      div.appendChild(makeDiv);
+      console.log(practics[current]);
+
+    }
+
+    //-----여기까지가 practice 끝나는 부분
+
+
+    if(current >= practics.length) {
+      console.log('hello');
+      
+      div.textContent = completeText;
+      isEnd =true;
+      console.log(isEnd + "트루로 바뀌었습니다.")
+
+    }
+
+    //-----여기까지가 다모았다 끝나는 부분
+
+    if(isEnd === true) {
+      current = 0;
+      console.log(current + " : 0으로 바뀌었습니다.");
+
+      isEnd = false;
+    }
+
+    //-----여기까지가 다시 돌아가는 부분
+
+
+
+
+    });
+   
+    
+    </script>
+</body>
+
+</html>
+
+    
+    

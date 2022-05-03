@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{margin: 0; padding: 0;}
+
+    #root {
+      width: 100vw;
+      height: 100vh;
+      background-color: #ccc;
+
+      position: fixed;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      border: 1px solid black;
+    }
+
+    #root > div:nth-child(1) {
+
+      width: 20vw;
+      height: 100vh;
+      background-color: #c2c3ff;
+      border: 1px solid black;
+
+    }
+
+  </style>
+
+
+</head>
+<body>
+  <div id="root">
+    <div id="box1"></div>
+  </div>
+
+</body>
+
+<script>
+
+  const box1 = document.getElementById("box1");
+
+  console.dir(box1);
+  console.log(box1);
+
+  //----------------------------------
+
+  let Value = true;
+
+  box1.addEventListener('mouseover', function(){
+
+    if (Value === true) {
+
+      console.log('hi');
+      Value = false;
+
+      box1.style.marginLeft = "-200px";
+      box1.style.transition = "1s";
+
+    } else {
+
+      console.log('bye');
+      Value = true;
+
+      box1.style.marginLeft = "0px";
+      box1.style.transition = "1s";
+
+    }
+
+  });
+  box1.addEventListener('mouseout', function(){
+
+if (Value === true) {
+
+  console.log('hi');
+  Value = false;
+
+  box1.style.marginLeft = "-100px";
+  box1.style.transition = "1s";
+
+} else {
+
+  console.log('bye');
+  Value = true;
+
+  box1.style.marginLeft = "0px";
+  box1.style.transition = "1s";
+
+}
+
+
+
+
+});
+
+
+
+
+
+
+
+</script>
+</html>
