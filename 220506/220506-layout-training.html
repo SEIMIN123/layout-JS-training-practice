@@ -12,15 +12,24 @@
     <div>
       <div class="box1">
         <div>
-          <div></div>
-          <div></div>
-          <div></div>
+          <div>X</div>
+          <div>Lorem ipsum</div>
+          <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit. </div>
           <div>
-            <button id="click-1">click</button>
+            <button id="click-1">close</button>
           </div>
         </div>
       </div>
-      <div class="box2"></div>
+      <div class="box2">
+        <button id="click-2">open</button>
+        <div>
+          <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem reprehenderit perferendis, dolor ab velit dignissimos id quibusdam natus tempora unde animi alias labore omnis ipsa sequi veritatis fuga necessitatibus sed.<br>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem reprehenderit perferendis, dolor ab velit dignissimos id quibusdam natus tempora unde animi alias labore omnis ipsa sequi veritatis fuga necessitatibus sed.<br>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem reprehenderit perferendis, dolor ab velit dignissimos id quibusdam natus tempora unde animi alias labore omnis ipsa sequi veritatis fuga necessitatibus sed.
+          </h3>
+
+        </div>
+      </div>
     </div>
   </div>
 
@@ -30,7 +39,27 @@
     console.log(root);
     console.dir(root);
 
+    const box = root.children[0].children[0];
+
     const clickBtn = document.getElementById('click-1');
+    const clickBtn1 = document.getElementById('click-2');
+
+    let display = true;
+    let display1 = true;
+
+    clickBtn.addEventListener('click', function(){
+
+    box.style.display = "none";
+
+    });
+
+    clickBtn1.addEventListener('click', function(){
+
+    box.style.display = "block";
+
+    });
+
+
     
 
     

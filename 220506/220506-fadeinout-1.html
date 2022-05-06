@@ -5,67 +5,62 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-
-  <style>
-
-    *{margin: 0; padding: 0; box-sizing: border-box;}
-
-    #root {
-
-      width: 100vw;
-      height: 100vh;
-      border: 1px solid black;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    #click1 {
-
-      width: 100px;
-      height: 100px;
-      margin: 10px;
-      background-color: antiquewhite;
-    }
-
-    #click2 {
-
-      width: 100px;
-      height: 100px;
-      margin: 10px;
-      background-color: antiquewhite;
-      }
-
-    
-  </style>
 </head>
 <body>
 
-  <div id="root">
+  <div id="root"></div>
     <button id="click1">FADE IN</button>
     <button id="click2">FADE OUT</button>
-  </div>
 
   <script>
 
     const root = document.getElementById('root');
-    const clickBtn1 = document.getElementById('click1');
-    const clickBtn2 = document.getElementById('click2');
 
-    let opacityValue = 1;
+    root.style.width = "500px";
+    root.style.height = "500px";
+    root.style.backgroundColor = "#ccc";
 
+    const clickBtn = document.getElementById('click1');
+    const clickBtn1 = document.getElementById('click2');
+    
+    let opacityValue = 0;
+    let opacityValue1 = 0;
+    
     root.style.opacity = opacityValue;
-
-    console.log(root);
 
     //--------------------------
 
-    clickBtn1.addEventListener('click', function(){
+    clickBtn.addEventListener('click', function(){
 
       let fadein = setInterval(function() {
 
-      })
+        if(opacityValue < 1) {
 
+          opacityValue = opacityValue +0.1;
+
+          root.style.opacity = opacityValue;
+        } else {
+          clearInterval(fadein);
+        }
+
+      }, 30);
+
+    });
+
+    clickBtn.addEventListener('click', function(){
+
+      let fadein = setInterval(function() {
+
+        if(opacityValue1 < 1) {
+
+    opacityValue1 = opacityValue - 0.1;
+
+    root.style.opacity = opacityValue1;
+    } else {
+    clearInterval(fadein);
+    }
+
+      }, 30);
 
     });
 
