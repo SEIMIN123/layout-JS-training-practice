@@ -1,0 +1,44 @@
+*{margin: 0; padding: 0;}
+
+  @mixin flex ($d, $j, $a){
+
+  display: ($d);
+  justify-content: ($j);
+  align-items: ($a);
+  }
+  
+  @mixin border {
+    border: 1px solid rgb(61, 61, 61);
+  }
+
+    #root {
+
+      width: 100vw;
+      height: 100vh;
+      @include flex(flex,center,center);
+      @include border;
+
+    }
+
+    #con1 {
+
+      width: 500px;
+      height: 500px;
+      overflow: hidden;
+      @include flex(flex,center,center);
+      @include border;
+    }
+
+    #con1 > div {
+      width: 200px;
+      height: 200px;
+      background-color: aqua;
+      min-width: 200px;
+      margin: 20px;
+      @include border;
+      @include flex(flex,center,center);
+
+    }
+  
+  
+

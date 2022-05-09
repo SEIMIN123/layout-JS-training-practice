@@ -1,0 +1,107 @@
+@charset "utf-8";
+:root{
+    --wid:80%;
+    --inWrap:800px;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;}li{list-style-type:none;}img{vertical-align:middle;}button{cursor:pointer;}
+html,body{width:100%;min-height:100vh;background:#000;font-size:20px;color:#666;}
+
+h1{ margin:1rem auto 3rem;
+    text-align:center;}
+
+/* 영역 */
+.sect{
+    display:flex;flex-direction:column;flex-wrap:wrap;
+    align-items:center;
+    position:relative;overflow:hidden;
+    width:100%;
+    margin-bottom:5rem;}
+
+/* 슬라이더 */
+.wrap_slider{ outline:3px solid lime;
+    position:relative; overflow:hidden;
+    width:var(--wid);max-width:var(--inWrap);
+    aspect-ratio:16/9;}
+
+.slider{
+    display:flex;flex-wrap:nowrap;
+    position:relative;
+    transform:translateX(0);
+    transition:all 1s;}
+
+.slider li{
+    flex:none;
+    position:relative;overflow:hidden;
+    width:100%;height:100%;}
+
+.slider li img{
+    width:100%;height:100%;object-fit:contain;}
+
+/* 페이저 - 영역*/
+.pagerArea{
+    position:relative;
+    width:100%;
+    margin-top:1rem;
+    background:rgba(255,255,255,.1);}
+    
+.pagerArea .inWrap{
+    display:flex;flex-wrap:wrap;
+    justify-content:center;align-items:center;
+    position:relative;
+    width:var(--wid);max-width:var(--inWrap);
+    margin:0 auto; padding:.5rem 0;}
+
+/* 페이저 - 화살표 */
+[data-order="prev"],[data-order="next"]{
+    display:block;position:absolute;
+    width:2rem;height:2rem;
+    background:rgba(255,255,255,.5);
+    backdrop-filter:blur(5px);
+    border:1px solid rgba(255,255,255,.5);
+    border-radius:50%;
+    cursor:pointer;}
+
+[data-order="prev"]{left:1rem;}
+[data-order="next"]{right:1rem;}
+
+[data-order="prev"]::after,
+[data-order="next"]::after{
+    content:'';display:block;position:absolute;
+    top:32%;
+    width:25%;height:25%;
+    border:4px solid rgba(0,0,0,.5);
+    transform:rotate(45deg);
+    border-radius:2px;
+    pointer-events:none;}
+
+[data-order="prev"]::after{
+    left:40%;
+    border-width:0 0 4px 4px;}
+[data-order="next"]::after{
+    left:28%;
+    border-width:4px 4px 0 0;}
+
+/* 페이저 - 개별 버튼 */
+.pager{
+    display:flex;flex-wrap:wrap;}
+.pager li{
+    display:block;
+    width:.7rem;height:.7rem;
+    margin:0 .25em;
+    border-radius:.7rem;
+    background:rgba(255,255,255,.5);
+    cursor:pointer;
+    transition:all .3s;}
+
+.pager li.on{
+    width:3rem;
+    background:rgba(255,0,0,.8);}
+
+/* 페이저 - 일시정지 및 다시 재생 */
+.btn_pause{
+    padding:.5em 1.5em; margin:0 1rem;
+    background:transparent;
+    border:1px solid #fff;
+    color:#fff;
+}
