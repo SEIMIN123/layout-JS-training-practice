@@ -1,0 +1,219 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@SEIMIN123 
+designup
+/
+js_togglemenu
+Public
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+js_togglemenu/index.html
+@designup
+designup 20210808
+Latest commit 6c69d06 on 8 Aug 2021
+ History
+ 1 contributor
+178 lines (159 sloc)  4.6 KB
+   
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document </title>
+</head>
+<body>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body {
+            font-family: sans-serif;
+            background: url(https://cdn.pixabay.com/photo/2016/10/20/18/35/earth-1756274_960_720.jpg); 
+            background-size:cover;
+            color: #ffffff;
+            height: 100vh;
+            overflow: hidden;
+            font-size: 2.4rem;
+            
+        }
+        html{margin: 0; padding: 0; font-size: 62.5%  }
+        
+        .nav-menu-bars,
+        .nav-menu-bars::before,
+        .nav-menu-bars::after{
+            cursor: pointer;
+            border-radius: 1px;
+            height: 2px;
+            width: 25px;
+            background: #fff;
+            position: absolute;
+            left:0;
+            top:50%;
+            display: block;
+            transition: all 0.3s;
+        }
+        .nav-menu {
+            background-color: transparent;
+            height: 100%;
+            position: fixed;
+            width: 600px;
+            transform: translateX(-100%);
+            transition: transform 0.3s 0.3s;
+            
+        }
+        .nav-menu::before{
+            box-shadow: 0 8px 32px 0 rgba(23 23 23 / 38%);
+            border-radius: 10px;
+            background:rgb(255 255 255 / 10%);
+            backdrop-filter:blur(4px);
+            border: 1px solid rgba(255,255,255,0.18);
+            content: '';
+            height: 400%;
+            left:50%;
+            position: absolute;
+            top:0;
+            transform: translate(-50%, -50%) rotate(40deg);
+            width: 100%;
+            z-index: 0;
+            
+            
+        }
+        
+        /* 메뉴 오픈시 */
+        .nav-menu-open{
+            transform: translateX(0);
+        }
+        .nav-menu-open .nav-menu-bars{
+            background-color: transparent;
+        }
+        .nav-menu-open .nav-menu-bars::before,
+        .nav-menu-open .nav-menu-bars::after
+        {
+            top:0;
+        }
+        .nav-menu-open .nav-menu-bars::before
+        {
+            transform:rotate(45deg);
+        }
+        .nav-menu-open .nav-menu-bars::after
+        {
+            transform:rotate(-45deg);
+        }
+        .nav-menu-open .menu-list-item{
+            opacity: 1;
+        }
+        .nav-menu-open .menu-list-item:nth-child(1){
+            transition-delay: 1s;
+        }
+        .nav-menu-open .menu-list-item:nth-child(2){
+            transition-delay: 1.25s;
+        }
+        .nav-menu-open .menu-list-item:nth-child(3){
+            transition-delay: 1.5s;
+        }
+        .nav-menu-open .menu-list-item:nth-child(4){
+            transition-delay: 1.75s;
+        }
+        .nav-menu-open .menu-list-item:nth-child(5){
+            transition-delay: 2s;
+        }
+        .nav-menu-open .menu-list-item:nth-child(6){
+            transition-delay: 2.25s;
+        }
+        .nav-menu-open .menu-list-item:nth-child(7){
+            transition-delay: 2.5s;
+        }
+        .nav-menu-open .menu-list-item:nth-child(9){
+            transition-delay: 3s;
+        }
+        
+        .nav-menu-toggle{
+            cursor: pointer;
+            height: 30px;
+            width: 30px;
+            position: absolute;
+            right: -40px;
+            top:20px;
+            
+        }
+        
+        .nav-menu-bars::before,
+        .nav-menu-bars::after{
+            content: '';
+        }
+        .nav-menu-bars::before{
+            left:0;
+            top:-8px;
+        }
+        .nav-menu-bars::after{
+            left:0;
+            top:8px;
+        }
+        
+        .menu-list{
+            padding:60px 60px;
+            position: relative;
+            z-index: 10;
+            letter-spacing: 2px;
+            font-weight: 400;
+        }
+        .menu-list-item{
+            margin: 40px 0;
+            opacity: 0;
+            transition: opacity 0.5s 0.5s;
+        }
+        
+    
+       
+    </style>
+    <nav class="nav-menu">
+        <div class="nav-menu-toggle js-toggle">
+            <span class="nav-menu-bars"></span>
+        </div>
+
+        <ul class="menu-list">
+            <li class="menu-list-item">home</li>
+            <li class="menu-list-item">Gallery</li>
+            <li class="menu-list-item">About</li>
+            <li class="menu-list-item">Notice</li>
+            <li class="menu-list-item">Contact</li>
+        </ul>
+        
+   </nav>
+    
+<script>
+    const nav_menu = document.querySelector('.nav-menu');
+    const js_toggle = document.querySelector('.js-toggle');
+    
+    js_toggle.addEventListener('click',()=>{
+        nav_menu.classList.toggle('nav-menu-open');
+    });
+     
+</script>
+    
+</body>
+</html>
+© 2022 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+Loading complete

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  
+    <div class="wrapper">
+    
+    <h1>Stopwatch</h1>
+    <h2>Vanilla JavaScript Stopwatch</h2>
+    
+    <!-- --------------------------------------- -->
+    
+    <p><span id="seconds">00</span>:<span id="tens">00</span></p>
+    
+    <!-- --------------------------------------- -->
+    
+    <button id="button-start">Start</button>
+    <button id="button-stop">Stop</button>
+    <button id="button-reset">Reset</button>
+    
+    
+    </div>
+  
+  <script>
+
+window.onload = function () {
+  
+  var seconds = 00; 
+  var tens = 00; 
+  //변수 선언을 해놨네
+
+  var appendTens = document.getElementById("tens")
+  var appendSeconds = document.getElementById("seconds")
+
+  var buttonStart = document.getElementById('button-start');
+  var buttonStop = document.getElementById('button-stop');
+  var buttonReset = document.getElementById('button-reset');
+  
+  var Interval ;
+  //강사님 A : 변수 선언만 했다. 나중에 쓸 예정이다. 
+
+  buttonStart.onclick = function() {
+    
+    clearInterval(Interval);
+    //시작하는 것에 종료 인터벌을 왜?
+    Interval = setInterval(startTimer, 10);
+    //변수만 선언 한것에 시작 초를 0.01초로 하겠다. 
+  }
+  
+  buttonStop.onclick = function() {
+    clearInterval(Interval);
+    //이거는 멈추는거니까 종료 인터벌
+  }
+
+  buttonReset.onclick = function() {
+    clearInterval(Interval);
+    tens = "00";
+    //이건 앞에 초
+  	seconds = "00";
+    //이건 뒤에 시초
+    appendTens.innerHTML = tens;
+  	appendSeconds.innerHTML = seconds;
+    //innerHTML을 왜?
+  }
+  
+  function startTimer () {
+    tens++; 
+    //tens를 증가시켜달라
+    
+    if(tens <= 9){
+      appendTens.innerHTML = "0" + tens;
+    }
+    
+    if (tens > 9){
+      appendTens.innerHTML = tens;
+      
+    } 
+    
+    if (tens > 99) {
+      console.log("seconds");
+      seconds++;
+      appendSeconds.innerHTML = "0" + seconds;
+      tens = 0;
+      appendTens.innerHTML = "0" + 0;
+    }
+    
+    if (seconds > 9){
+      appendSeconds.innerHTML = seconds;
+    }
+  
+  }
+  
+}
+  </script>
+</body>
+</html>

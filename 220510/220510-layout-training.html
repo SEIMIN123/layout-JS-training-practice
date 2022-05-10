@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+    *{margin: 0; padding: 0; box-sizing: border-box;}
+
+
+    #root {
+      width: 100vw;
+      height: 100vh;
+      background-color: #ccc;
+    }
+
+    #button {
+
+      background-color: aqua;
+    }
+
+    #menu {
+
+      background-color: antiquewhite;
+    }
+
+  </style>
+</head>
+<body>
+<div id="root">
+  <div id="button">click</div>
+  <div id="menu">items</div>
+</div>
+
+<script>
+
+  const butTon = document.getElementById('button');
+  const menu = document.getElementById('menu');
+
+  console.log(butTon);
+  console.log(menu);
+
+
+  let data = true;
+  
+  butTon.addEventListener('click', function(){
+    console.log('click');
+
+    if(data === true) {
+      console.log("yes");
+      data = false;
+      menu.style.display = "none";
+
+    } else {
+      console.log("no");
+      data = true;
+      menu.style.display = "block";
+
+    }
+
+
+
+
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+
+    *{margin: 0; padding: 0; box-sizing: border-box;}
+
+
+    #root {
+      width: 100vw;
+      height: 100vh;
+      background-color: #ccc;
+
+    }
+
+    #root > div {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .box1 {
+
+      width: 500px;
+      height: 500px;
+      margin: 20px;
+      transition: 2s;
+      background-color: antiquewhite;
+      border: 1px solid black;
+    }
+
+    .box2 {
+
+      width: 500px;
+      height: 500px;
+      background-color: blueviolet;
+      border: 1px solid black;
+      transition: 2s;      
+      }
+
+      .box1-1 {
+
+        transform:translateX(600px);
+
+      }
+
+      .box2-1 {
+
+        transform:translateX(-600px);
+
+}
+
+
+  </style>
+
+  
+</head>
+<body>
+  <div id="root">
+    <div>
+      <div class="box1 box1-1">A</div>
+      <div class="box2 box2-1">B</div>
+    </div>
+  </div>
+
+  <script>
+
+    const root = document.getElementById("root");
+    const box1 = document.getElementsByClassName("box1"); 
+    const box2 = document.getElementsByClassName("box2");
+
+    console.log(root);
+    console.dir(root);
+
+    const a = root.children[0].children[0];
+    const b = root.children[0].children[1];
+
+    console.log(a);
+    console.log(b);
+
+//--------------------------------------
+    
+    a.addEventListener('click', function(){
+
+      a.classList.toggle('box1-1');
+
+    });
+
+    b.addEventListener('click', function(){
+
+    b.classList.toggle('box2-1');
+
+    });
+
+    
+    
+
+  </script>
+</body>
+</html>
