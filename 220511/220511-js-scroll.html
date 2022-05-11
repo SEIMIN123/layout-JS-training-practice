@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+<style>
+  
+  *{margin: 0; padding: 0; box-sizing: border-box;}
+
+
+#root {
+
+  width: 100vw;
+  height: 3000px;
+}
+</style>
+</head>
+<body>
+  <div id="root"></div>
+
+  <script>
+    console.log(window);
+
+    let heightValue = document.body.scrollHeight;
+    let currentscrollValue = window.scrollY;
+    
+    window.addEventListener('scroll', (event) => {
+      
+    if(window.scrollY > 0) {
+      console.log('스크롤해봐');
+      console.log(window.scrollY);
+      console.log('hello');
+    }
+      if(window.scrollY >= 2000) {
+        console.log('전체값' + heightValue); {
+
+        }
+        }
+      
+    //   console.log(document.body.scrollHeight);
+      
+    // console.log(event.offsetY);
+
+    // let bgColor = true;
+
+
+    // if(event.offsetY > 1500) {
+
+    //   bgColor = false;
+    //   window.document.bgColor = 'black';
+
+    // } else {
+
+    //   bgColor = true;
+    //   window.document.bgColor = "white";
+    // }
+    });
+
+  </script>
+</body>
+</html>

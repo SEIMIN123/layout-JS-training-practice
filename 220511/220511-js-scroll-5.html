@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+*{margin: 0; padding: 0;}
+
+#root {
+
+  width: 100vw;
+  height: 100vh;
+  border: 1px solid black;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#box{
+
+  width: 50vw;
+  height: 50vh;
+  background-color: salmon;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 30px;
+}
+
+button {
+
+  width: 200px;
+  height: 50px;
+  margin: 50px;
+  
+}
+
+
+  </style>
+</head>
+<body>
+  <div id="root">
+    <section id="box">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus obcaecati eaque laboriosam? Quaerat, aspernatur rem enim corrupti commodi sunt harum, pariatur sint animi laboriosam dolorem possimus, corporis dolor culpa impedit!</section>
+    <button id="button"></button>
+  </div>
+
+  <script>
+
+    const box = document.getElementById('box');
+    const button = document.getElementById('button');
+
+    console.log(box);
+    console.log(button);
+
+    let clickBtn = true;
+
+    
+    button.addEventListener('click', function(){
+
+      if(clickBtn === true){
+
+        clickBtn = false;
+
+      box.style.display = "none";
+      
+      } else {  
+
+        clickBtn = true;
+
+      box.style.display = "block";
+
+      }
+    });
+
+
+  </script>
+</body>
+</html>

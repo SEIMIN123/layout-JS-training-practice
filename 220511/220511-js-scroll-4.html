@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+<style>
+  *{margin: 0; padding: 0; box-sizing: border-box;}
+
+#root {
+
+  width: 100vw;
+  height: 100vh;
+  background-color: #ccc;
+}
+
+#root > section {
+
+  width: 100vw;
+  height: 1vh;
+  background-color: salmon;
+  border: 1px solid black;
+}
+
+#root > aside {
+
+  width: 50vw;
+  height: 1vh;
+  background-color: #c2c3ff;
+}
+
+</style>
+</head>
+<body>
+  <div id="root">
+  </div>
+<script>
+
+  const root = document.getElementById('root');
+  let article = document.createElement('article');
+  root.appendChild(article);
+
+  let count = 0;
+  root.addEventListener('wheel', function(){
+    let section = document.createElement('section');
+    section.setAttribute('id', `section = ${count}`);
+    section.textContent = count;
+    root.appendChild(section);
+    count++;
+
+  });
+
+  root.addEventListener('click', function(){
+    console.log('클릭이벤트가 일어나고 있어');
+    let aside = document.createElement('aside');
+    aside.textContent = "클릭함";
+    root.insertBefore(aside, root.firstChild);
+
+  });
+</script>
+
+</body>
+</html>

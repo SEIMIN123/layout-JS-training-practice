@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+
+    *{margin: 0; padding: 0;}
+
+    #root {
+
+      width: 100vw;
+      height: 500vh;
+      border: 1px solid red;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    #root > div {
+
+      width: 90vw;
+      height: 500vh;
+      border: 1px solid black;
+    }
+
+    .box1 {
+
+      background-color: rgb(146, 235, 205);
+    }
+
+    .box2 {
+
+      background-color: rgb(31, 204, 146);
+      
+    }    
+    
+    .box3 {
+      
+      background-color: rgb(149, 241, 43);
+      
+    }    
+    
+    .box4 {
+      
+      background-color: rgb(194, 101, 73);
+      
+    }    
+    
+    .box5 {
+      
+      background-color: rgb(155, 127, 255);
+      
+    } 
+
+
+  </style>
+</head>
+<body>
+  <div id="root">
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="box5"></div>
+  </div>
+
+  <script>
+
+    const root = document.getElementById('root');
+    console.log(root);
+    console.log(root.offsetHeight);
+    
+    const box = document.querySelectorAll('#root > div');
+    console.log(box);
+    
+
+
+  </script>
+</body>
+</html>

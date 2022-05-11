@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+<style>
+  
+  *{margin: 0; padding: 0; box-sizing: border-box;}
+
+
+#root {
+
+  width: 100vw;
+  height: 500vh;
+  background: linear-gradient(0deg, #ccc, #0582);
+  display: flex;
+justify-content: flex-end;
+align-items: flex-end;
+}
+
+#root > div:nth-child(1){
+
+  width: 80vw;
+  height: 500vh;
+  border: 1px solid black;
+}
+
+#root > div:nth-child(2){
+
+width: 20vw;
+height: 500vh;
+border: 1px solid black;
+display: flex;
+justify-content: flex-end;
+align-items: flex-end;
+}
+
+#root > div:nth-child(2) > div {
+
+width: 50px;
+height: 50px;
+border: 1px solid black;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+#root > div:nth-child(2) > div:hover {
+  cursor: pointer;
+
+}
+
+</style>
+</head>
+<body>
+  <div id="root">
+      <div></div>
+      <div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+      </div>
+  </div>
+
+  <script>
+
+    window.addEventListener('click', (event) => {
+      console.log(window);
+    })
+
+      window.addEventListener('click', (event) => {
+
+      window.scrollTo ({
+  
+        top: 0,
+        behavior: "smooth"
+
+      })
+
+    });
+      
+  </script>
+</body>
+</html>
