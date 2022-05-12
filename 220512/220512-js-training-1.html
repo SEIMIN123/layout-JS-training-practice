@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+<style>
+
+#root {
+
+  width: 100vw;
+  height: 100vh;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.a {
+
+  width: 200px;
+  height: 100px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.b {
+
+width: 200px;
+height: 100px;
+border: 1px solid black;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+</style>
+</head>
+<body>
+  <div id="root">
+    <div class="a" data-test="1">menu-1</div>
+    <div class="a" data-test="2">menu-2</div>
+    <div class="a" data-test="2">menu-3</div>
+    <div class="a" data-test="2">menu-4</div>
+  </div>
+<script>
+
+  const a = document.querySelectorAll('.a');
+  console.log(a);
+
+  for (let i = 0; i < a.length; i++) {
+  
+  a[i].addEventListener('click', function(){
+  
+  console.log("머");
+
+  if(a[i].dataset.test === "2") {
+
+    a[i].style.display = "none";
+  
+  } else {
+
+    a[i].style.display = "block";
+  }
+  
+
+  });
+
+
+  }
+
+  
+
+
+</script>
+</body>
+</html>
