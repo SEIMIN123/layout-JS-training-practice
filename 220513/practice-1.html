@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+    *{margin: 0; padding: 0; box-sizing: border-box;}
+
+    body {
+
+      background-color: #ccc;
+    }
+
+    .box {
+
+      width: 30vw;
+      height: 100vh;
+      background-color: #fff;
+      overflow: hidden;
+      transform: translateX(-300px);
+      transition: 2s;
+
+    }
+
+    .box-open {
+
+      transform: translateX(0px);
+      background-color: #fff;
+
+    }
+
+    .btn {
+
+      width: 40px;
+      height: 40px;
+      margin: 35px;
+      margin-left: 450px;
+      cursor: pointer;
+    }
+
+    .line {
+
+      width: 30px;
+      height: 4px;
+      background: #000;
+      margin: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .line-1 {
+
+      width: 30px;
+    }
+
+    .line-1 .line-cross {
+
+      width: 30px;
+      transform: rotate(45deg) translateY(10px);
+      background: #000;
+
+    }
+
+    .line-2 {
+
+      width: 30px;
+      }
+
+    .line-2 .fade-out {
+
+      width: 30px;
+      opacity: 0;
+    }
+
+    .line-3 {
+      
+      width: 30px;
+      }
+
+    .line-3 .line-cross {
+
+      width: 30px;
+      transform: rotate(-45deg) translateY(-10px);
+      background: #000;
+
+}
+
+
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div class="btn">
+      <div class="line line-1"></div>
+      <div class="line line-2"></div>
+      <div class="line line-3"></div>
+    </div>
+  </div>
+
+  <script>
+
+    const box = document.querySelector(".box");
+    const btn = document.querySelector(".btn");
+
+    const lineOne = document.querySelector("line-1");
+    const lineTwo = document.querySelector("line-2");
+    const lineThree = document.querySelector("line-3");
+
+    btn.addEventListener('click', function () {
+
+      box.classList.toggle('box-open');
+
+      lineOne.classList.toggle('line-cross');
+
+      lineTwo.classList.toggle('fade-out');
+
+      lineThree.classList.toggle('line-cross');
+
+    });
+  </script>
+</body>
+</html>

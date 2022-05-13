@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    #root {
+
+      width: 100vw;
+      height: 100vh;
+      border: 1px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #menu {
+
+      width: 80vw;
+      height: 80vh;
+      border: 1px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #btn:hover {
+
+      cursor: pointer;
+      }
+
+    #btn {
+      
+      width: 15vw;
+      height: 70vh;
+      border: 1px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background: #fff;
+    }
+
+    #click {
+
+      width: 30px;
+      height: 2px;
+      margin: 5px;
+      background-color: black;
+    }
+    
+    #click .line-cross {
+
+      width: 30px;
+      transform: rotate(45deg) translateY(10px);
+      background-color: black;
+
+    }
+
+    #click1 {
+
+    width: 30px;
+    height: 2px;
+    margin: 5px;
+    transform: translateX(0);
+    background-color: black;
+    }
+    
+    #click1 .fade-out {
+    width: 30px;
+    opacity: 0;
+    }
+
+    #click2 {
+    
+    width: 30px;
+    height: 2px;
+    margin: 5px;
+    background-color: black;
+    transform: rotate(0) translateY(0);
+
+    }
+  
+    #click2 .line-cross {
+
+      width: 30px;
+      transform: rotate(-45deg) translateY(-10px);
+      background-color: black;
+
+    }
+
+.bar {
+
+      width: 15vw;
+      height: 70vh;
+      transition: 2s;
+      display: flex;
+      background-color: aliceblue;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transform: translateX(0px);
+      transition: 1s;
+
+    }
+
+    .bar .fade-in {
+
+      opacity: 1;
+      transform: translateX(500px);
+
+    }
+
+  </style>
+</head>
+<body>
+  <div id="root">
+    <div id="menu">
+      <div id="btn">
+        <div id="click"></div>
+        <div id="click1"></div>
+        <div id="click2"></div>
+      </div>   
+      <div class="bar"></div>
+    </div>
+  </div>
+
+  <script>
+
+    const menu = document.getElementById('menu');
+    const btn = document.getElementById('btn');
+ 
+    console.log(menu);
+    console.log(btn);
+    
+    menu.addEventListener('click', () => {
+
+      btn.classList.toggle('click');
+      menu.classList.toggle('click');
+
+      console.log('a');
+
+
+    });
+  </script>
+</body>
+</html>

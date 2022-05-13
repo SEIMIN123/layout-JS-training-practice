@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+*{margin:0; padding:0;box-sizing: border-box;}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #ccc;
+  
+}
+
+/* --------------------------------------------------------- */
+
+nav {
+    width: 30vw; 
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    transform: translateX(-200px);
+    transition: 1s;
+}
+
+nav.nav-open {
+    transform: translateX(0px);
+    background: rgba(255, 255, 255);
+}
+
+nav .menu-btn {
+    width: 30px;
+    top: 5vw;
+    right: 15vh;
+    position: absolute;
+    cursor: pointer;
+}
+
+nav .menu-btn .line {
+    width: 30px;
+    height: 2px;
+    background: #fff;
+    margin: 5px;
+    transition: 1s;
+}
+
+nav .menu-btn .line.line--1 {
+    width: 30px;
+    transform: rotate(0) translateY(0);
+} 
+
+nav .menu-btn .line.line--1.line-cross {
+    width: 30px;
+    transform: rotate(45deg) translateY(10px);
+    background: rgba(0,0,0);
+}
+
+nav .menu-btn .line.line--2 {
+    width: 30px;
+    transform: translateX(0);
+}
+
+nav .menu-btn .line.line--2.line-fade-out {
+    width: 30px;
+    opacity: 0;
+}
+
+nav .menu-btn .line.line--3 {
+    width: 30px;
+    transform: rotate(0) translateY(0);
+}
+
+nav .menu-btn .line.line--3.line-cross {
+    width: 30px;
+    transform: rotate(-45deg) translateY(-10px);
+    background: rgba(0,0,0);
+}
+
+/* ---------------------------------------------------------- */
+
+/* nav .nav-links {
+  width: 10vw;
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(-100px);
+  transition: 1s;
+} */
+
+/* nav .nav-links.fade-in {
+    transform: translateX(0px);
+} */
+/* 
+nav .nav-links .link {
+    margin: 50px;
+    transition: 1s;
+}
+
+nav .nav-links .link:hover {
+    color: rgba(0, 0, 0, 0.5);
+} */
+
+
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="menu-btn">
+      <div class="line line--1"></div>
+      <div class="line line--2"></div>
+      <div class="line line--3"></div>
+    </div>
+  </nav>
+
+  <script>
+    const nav = document.querySelector('nav');
+    const menuBtn = document.querySelector('.menu-btn');
+    const lineOne = document.querySelector('nav .menu-btn .line--1');
+    const lineTwo = document.querySelector('nav .menu-btn .line--2');
+    const lineThree = document.querySelector('nav .menu-btn .line--3');
+    const link = document.querySelector('nav .nav-links');
+    
+    menuBtn.addEventListener('click', () => {
+    
+      nav.classList.toggle('nav-open');
+    
+      lineOne.classList.toggle('line-cross');
+    
+      lineTwo.classList.toggle('line-fade-out');
+    
+      lineThree.classList.toggle('line-cross');
+    
+      link.classList.toggle('fade-in');
+});
+  </script>
+</body>
+</html>
