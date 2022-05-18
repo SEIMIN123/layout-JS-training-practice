@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    *{margin: 0; padding: 0;}
+
+    #root {
+
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    
+    }
+
+    #root > div:nth-child(1) {
+
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #root > div:nth-child(2) {
+
+
+      width: 100vw;
+      height: 20vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+
+    #root > div > div {
+
+      width: 150px;
+      height: 150px;
+      background-color: #ccc;
+      border-radius: 80px;
+      margin: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+    button {
+      width: 100px;
+      height: 50px;
+      margin-top: -500px;
+
+    }
+
+  </style>
+</head>
+<body>
+  <div id="root">
+    <div class="ele">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+    </div>
+    <div>    
+      <button id="btn">click</button>
+    </div>
+  </div>
+
+<script>
+  const root = document.getElementById('root');
+  const clickBtn = document.getElementById('btn');
+  const ele = document.querySelectorAll('.ele>div');
+  const arr = Array.from(ele); 
+ 
+  console.log(ele);
+  console.log(arr);
+
+  let data = true;
+  clickBtn.addEventListener('click', () => {
+    
+    for(let i = 0; i < ele.length; i++) {
+    
+    if(data === true) {
+      
+      data = false;
+
+      ele[i].style.marginBottom = "500px";
+      ele[i].style.transition = "1s";
+
+      } else {
+
+      data = true;
+
+      ele[i].style.marginBottom = "0px";  
+
+      }
+        }
+      });
+
+
+      //   ele[i].style.marginBottom = "500px";
+      //   ele[i].style.transtion = "2s";
+
+      // } else {
+        
+      //   ele[i].style.marginBottom = "0px";
+      //   ele[i].style.transtion = "2s";
+
+      
+    
+
+    
+    
+    //*--------------------------------------------------------
+    
+    // const ele2 = document.getElementById('ele2');
+    // const ele3 = document.getElementById('ele3');
+    // const ele4 = document.getElementById('ele4');
+    // const ele5 = document.getElementById('ele5');
+    // const ele6 = document.getElementById('ele6');
+    // const ele7 = document.getElementById('ele7');
+    // const ele8 = document.getElementById('ele8');
+    // const ele9 = document.getElementById('ele9');
+  // const arr = root.children[0].children[1];
+  
+  // console.log(clickBtn);
+  // console.dir(root);
+  
+  // let data = true;
+  // let data1 = true;
+  
+  // clickBtn.addEventListener('click', () => {
+    //   if(data === true){
+      
+      //     data = false;
+      //     ele1.style.marginBottom = "500px";
+      //     ele1.style.transition = "1s";
+      
+      //   } else {
+        
+        //     data = true;
+        //     ele1.style.marginBottom = "0px";
+        
+        //   }
+        
+        // });
+
+        </script>
+      </body>
+      </html>
