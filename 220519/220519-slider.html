@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+*{margin: 0; padding: 0; box-sizing: border-box;}
+    
+
+.container {
+max-width: 1000px;
+margin: auto;
+position: relative;
+
+}
+
+.prev.next {
+
+  width: auto;
+  top: 50%;
+  padding: 16px;
+  margin-top: -22px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  position: absolute;
+  color: white;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: #ccc;
+  color: #000;
+}
+  </style>
+
+
+</head>
+<body>
+  <div class="container">
+    <div class="items-">1</div>
+    <div class="items-">2</div>
+    <div class="items-">3</div>
+    <div class="items-">4</div>
+    <div class="items-">5</div>
+    <div class="prev" onclick="plusSlides(-1,0)">&#10094;</div>
+    <div class="next" onclick="plusSlides(-1,0)">&#10095;</div>
+  </div>
+
+  <script>
+
+    let slideIndex = [1,1];
+    let slideId = ["my"]
+  </script>
+</body>
+</html>
