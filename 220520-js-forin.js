@@ -1,9 +1,9 @@
 const poketmon = {
 
-  a : '꼬부기',
-  b : '파이리',
-  c : '피카츄',
-  d : '이상해씨'
+  a: '꼬부기',
+  b: '파이리',
+  c: '피카츄',
+  d: '이상해씨'
 }
 
 // console.log(poketmon.a); 하던방식
@@ -27,7 +27,7 @@ const poketmon = {
 
 let poketmonArr = [];
 
-for(let props in poketmon) { 
+for (let props in poketmon) {
 
   console.log(poketmon[props]);
   poketmonArr.push(poketmon[props]);
