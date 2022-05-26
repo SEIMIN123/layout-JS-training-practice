@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    #root {
+
+      width: 100vw;
+      height: 100vh;
+      color: #ccc;
+    }
+
+    .cir {
+
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background-color: #ee6c4d;
+      position: absolute;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div id="root">
+    <h1>123</h1>
+    <h1>456</h1>
+  </div>
+  <div class="cir"></div>
+
+  <script>
+    const root = document.getElementById('root');
+    const cir = document.querySelector('.cir');
+
+    root.addEventListener(`mousemove`, (event) => {
+
+      console.log(event.offsetX);
+      console.log(event.offsetY);
+
+      const mouseX = event.clientX;
+      const mouseY = event.clientY;
+
+      cir.style.left = mouseX + 'px';
+      cir.style.top = mouseY + 'px';
+
+      root.children[0].textContent = event.offsetX;
+      root.children[1].textContent = event.offsetY;
+
+    });
+
+
+    // let bgColorValue = 45;
+    // let bgColor = `rgb(${bgColorValue},${bgColorValue},${bgColorValue})`;
+
+    // let result = (total * prcet) / 100;
+    // let setInterval math.round(() => {
+
+
+    // root.style.backgroundColor = bgColor;
+    // console.log(root);
+
+
+    // root.addEventListener('mousemove', (event) => {
+
+    //   console.log(event.offsetX);
+    //   console.log(event.offsetY);
+
+    //   root.children[0].textContent = event.offsetX;
+    //   root.children[1].textContent = event.offsetY;
+  </script>
+
+</body>
+
+</html>
