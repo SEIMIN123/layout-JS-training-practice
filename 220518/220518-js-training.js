@@ -81,7 +81,6 @@ function diffDay() {
 
   const diff = namenTime - todayTime;
 
-  const diffDay 
 
 }
 
