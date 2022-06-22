@@ -1,17 +1,16 @@
-// const root = document.getElementById('root');
-// const ul = document.createElement('ul');
-// root.appendChild(ul);
+const root = document.getElementById('root');
+const ul = document.createElement('ul');
+root.appendChild(ul);
 
-// let li = [];
-// for(let i = 0; i < 10; i++) {
-//   li.push (`<li> ${i} </li>`);
+let li = [];
+for(let i = 0; i < 10; i++) {
+  li.push (`<li> ${i} </li>`);
   
-// }
-// console.log(li.join(""));
-// ul.innerHTML = li.join("");
+}
+console.log(li.join(""));
+ul.innerHTML = li.join("");
 
 //---------------------------------------------------
-const root = document.getElementById('root');
 root.innerHTML = `<ul>
                     <li>1</li>
                     <li>2</li>
