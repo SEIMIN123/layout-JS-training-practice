@@ -1,20 +1,19 @@
-function stringCombine(a, b) {
-
-  return a + b;
+function one() {
+  console.log('this is one function');
+  two();
 }
 
-function consoleLoop(strings, count) {
-
-  for (let i = 0; i < count; i++) {
-
-    console.log(strings);
-  }
+function two() {
+  console.log('this is two function');
+  three();
 }
 
-function one(ipgoo, ipgootwo, count) {
-  let strings = stringCombine(ipgoo, ipgootwo);
-  consoleLoop(strings, count);
-  return "병신";
+function three() {
+  console.log('this is three function');
+  four();
 }
 
-one("<div>", "</div>", 5);
+function four() {
+  console.log('this is four function');
+  one();
+}
