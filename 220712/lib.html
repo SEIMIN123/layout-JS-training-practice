@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+
+    #width1 {
+
+      border: 1px solid black;
+    }
+  </style>
+</head>
+
+<div id="width1"></div>
+<div id="height1"></div>
+
+<body>
+  </div>
+  <script>
+
+    size();
+    window.addEventListener('resize', size);
+
+    function size(a) {
+      document.getElementById('width1').innerText = document.documentElement.clientWidth;
+      document.getElementById('height1').innerText = document.documentElement.clientHeight;
+      
+      let data = true;
+      if(innerWidth === 600){
+        data = false;
+        document.getElementById('width1').style.width = '20vw';
+        document.getElementById('height1').style.height = '20vh';
+      }
+      console.log(size);
+    }
+  </script>
+</body>
+
+</html>
