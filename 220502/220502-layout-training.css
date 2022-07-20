@@ -6,47 +6,26 @@
 #root {
   width: 100v;
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 #root > div {
   width: 50vw;
   height: 90vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 #root .box1 {
   width: 50vw;
   height: 90vh;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   z-index: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  justify-content: center;
+  align-items: flex-end;
 }
-
 #root .box1 > div {
   width: 12px;
   height: 12px;
@@ -54,87 +33,54 @@
   background-color: #ccc;
   border-radius: 50px;
 }
-
 #root .box2 {
   width: 80vw;
   height: 90vh;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   margin-left: -300px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 #root .box2 > div {
   width: 40vw;
   height: 80vh;
   border-radius: 400px;
   border: 2px solid black;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 #root .ro {
   width: 15vw;
   height: 30vh;
   border-radius: 35px;
-  background-color: #c8c8c8;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  background-color: rgb(200, 200, 200);
+  transform: rotate(45deg);
   z-index: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 #root .ro > div {
   width: 10vw;
   height: 5vh;
   font-size: 2vw;
   text-align: center;
-  font-family: Impact,  Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-  display: -webkit-box;
-  display: -ms-flexbox;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  transform: rotate(-45deg);
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 #root .ro1 {
   width: 15vw;
   height: 30vh;
   border-radius: 35px;
-  background-color: #8a8888;
+  background-color: rgb(138, 136, 136);
   opacity: 50px;
-  -webkit-filter: blur(50px);
-          filter: blur(50px);
+  filter: blur(50px);
   margin-left: -150px;
   z-index: 0;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
 }

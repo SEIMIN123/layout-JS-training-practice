@@ -6,190 +6,124 @@
 #root {
   width: 100vw;
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 #root > div {
   width: 100vw;
   height: 100vh;
 }
-
 #root header {
   position: relative;
-  background-color: #d8d0d0;
+  background-color: rgb(216, 208, 208);
 }
-
 #root header > div:nth-child(1) {
   width: 300px;
   height: 75px;
   margin: 10px;
-  background-color: #646262;
+  background-color: rgb(100, 98, 98);
 }
-
 #root .box1-1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-end;
 }
-
 #root .box1-1 > div {
   width: 200px;
   height: 200px;
   margin-bottom: -170px;
   background-color: #635c5c;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   border: 1px solid black;
 }
-
 #root main {
   width: 100vw;
   height: 50vh;
-  background-color: #bebcbc;
+  background-color: rgb(190, 188, 188);
 }
-
 #root main > div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
 }
-
 #root main > div > div {
   width: 300px;
   height: 300px;
 }
-
 #root main > div > div:nth-child(1) {
-  background-color: #e7e0e0;
+  background-color: rgb(231, 224, 224);
   z-index: 6;
   margin-left: -70vw;
   margin-top: 20px;
 }
-
 #root main > div > div:nth-child(2) {
-  background-color: #8f8d8a;
+  background-color: rgb(143, 141, 138);
   z-index: 5;
   margin-left: -250px;
   margin-top: 40px;
 }
-
 #root main > div > div:nth-child(3) {
-  background-color: #2c2e2e;
+  background-color: rgb(44, 46, 46);
   z-index: 4;
   margin-left: -250px;
   margin-top: 60px;
 }
-
 #root footer > div:nth-child(1) {
   width: 100vw;
   height: 30vh;
-  background-color: #a7a7a7;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  background-color: rgb(167, 167, 167);
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 #root footer > div:nth-child(1) > div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 #root footer > div:nth-child(1) > div > div {
   width: 200px;
   height: 150px;
   background-color: #dad5d5;
 }
-
 #root footer > div:nth-child(1) > div > div > div {
   width: 200px;
   height: 30px;
 }
-
 #root .box1 {
-  background-color: #969696;
+  background-color: rgb(150, 150, 150);
   border: 1px solid black;
 }
-
 #root .box2 {
-  background-color: #3a2828;
+  background-color: rgb(58, 40, 40);
   z-index: 1;
   margin-left: -50px;
   margin-top: 30px;
   border: 1px solid black;
 }
-
 #root footer > div:nth-child(2) {
   width: 100vw;
   height: 10vh;
-  background-color: #494343;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  background-color: rgb(73, 67, 67);
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 #root footer > div:nth-child(1) > div {
   width: 500px;
   height: 250px;
   margin: 70px;
   background-color: #6e6464;
 }
-
 #root footer > div:nth-child(2) > div {
   width: 450px;
   height: 70px;
   margin: 70px;
-  background-color: #e2d0d0;
+  background-color: rgb(226, 208, 208);
 }

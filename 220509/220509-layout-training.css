@@ -6,32 +6,20 @@
 #root {
   width: 100vw;
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border: 1px solid #3d3d3d;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(61, 61, 61);
 }
 
 #con1 {
   width: 500px;
   height: 500px;
   overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border: 1px solid #3d3d3d;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(61, 61, 61);
 }
 
 #con1 > div {
@@ -40,14 +28,8 @@
   background-color: aqua;
   min-width: 200px;
   margin: 20px;
-  border: 1px solid #3d3d3d;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  border: 1px solid rgb(61, 61, 61);
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }

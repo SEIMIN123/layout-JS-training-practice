@@ -28,32 +28,19 @@
     width: 0px;
   }
 }
-
 #root {
   width: 100vw;
   height: 150vh;
-  border: 1px solid #723d3d;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  border: 1px solid rgb(114, 61, 61);
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 #root > div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 #root > div > div {
@@ -78,21 +65,21 @@
 .box2 {
   margin: 10px;
   padding: 30px;
-  background-color: #6e19cf;
+  background-color: rgb(110, 25, 207);
   bottom: 10vh;
 }
 
 .box3 {
   margin: 10px;
   padding: 30px;
-  background-color: #7df030;
+  background-color: rgb(125, 240, 48);
   right: 5vw;
 }
 
 .box4 {
   margin: 10px;
   padding: 30px;
-  background-color: #d66b2d;
+  background-color: rgb(214, 107, 45);
   right: 40vw;
   top: 15vh;
 }

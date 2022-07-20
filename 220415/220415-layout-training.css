@@ -26,64 +26,35 @@
     width: 10px;
   }
 }
-
 #root {
   width: 100vw;
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   border: 1px solid #000;
 }
-
 #root > div {
   width: 50vw;
   height: 100vh;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background-color: #232231;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  flex-direction: column;
+  background-color: rgb(35, 34, 49);
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   border: 1px solid #000;
 }
-
 #root > div > div {
   width: 800px;
   height: 500px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  flex-direction: column;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 #root > div > div:nth-child(1) {
   height: 15vh;
 }
-
 #root .cir {
   width: 20px;
   height: 20px;
@@ -91,7 +62,6 @@
   border-radius: 30px;
   background-color: #ccc;
 }
-
 #root > div > div:nth-child(3) > .box {
   width: 200px;
   height: 200px;
@@ -102,29 +72,15 @@
   font-size: 40px;
   border-radius: 50px;
   color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 #root .ani {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 #root .ani > div {
   width: 100px;
   height: 100px;
@@ -134,47 +90,30 @@
   -webkit-animation: 10s ani infinite;
           animation: 10s ani infinite;
 }
-
 #root > div > div:nth-child(4) {
   text-align: center;
   color: white;
 }
-
 #root > div > div:nth-child(5) {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  flex-direction: row;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 #root > div > div:nth-child(5) > div {
   width: 600px;
   height: 300px;
   border-radius: 30px;
-  background-color: #5678b6;
+  background-color: rgb(86, 120, 182);
 }
-
 #root > div > div:nth-child(5) > div:nth-child(2) {
   width: 300px;
   height: 300px;
   margin-left: 5vw;
-  background-color: #101338;
+  background-color: rgb(16, 19, 56);
 }
-
 #root > div > div:nth-child(6) {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   margin-top: -100px;
   position: -webkit-sticky;
   position: sticky;
@@ -183,9 +122,8 @@
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
   border-radius: 30px;
-  border: 1px black #000;
+  border: 1px rgb(0, 0, 0) #000;
 }
-
 #root > div > div:nth-child(6) > div {
   width: 100px;
   height: 20px;
